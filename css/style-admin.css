@@ -1,0 +1,15 @@
+/* Opções */
+.acf_postbox {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.acf-tab-group li a {
+	font-size: 0.9em !important;
+	font-weight: 300 !important;
+	color: #666 !important;
+}
+
+/* Ícones */
+#toplevel_page_acf-options .wp-menu-image.dashicons-before.dashicons-admin-generic:before {
+	content: "\f108" !important;
+}

@@ -107,6 +107,22 @@ function junto_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'junto_theme_scripts' );
 
 /**
+ * Admin scripts
+ */
+add_action( 'admin_enqueue_scripts', 'polis_admin_enqueue_scripts' );
+function polis_admin_enqueue_scripts(){
+	// Remove Open Sans
+	wp_deregister_style( 'open-sans' );
+	wp_register_style( 'open-sans', false );
+
+	// Theme admin scripts
+	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'source-sans', get_stylesheet_directory_uri() . '/css/source-sans.css', false, '1.0.0' );
+	wp_enqueue_style( 'style-admin', get_stylesheet_directory_uri() . '/css/style-admin.css', false, '1.0.0' );
+	wp_enqueue_style( 'rev-slider', get_stylesheet_directory_uri() . '/css/rev-slider.css', false, '1.0.0' );
+}
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
@@ -130,3 +146,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * ACF
+ */
+define( 'ACF_LITE' , false );
+require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
+require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
+require get_template_directory() . '/inc/acf-fields.php';
