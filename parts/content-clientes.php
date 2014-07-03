@@ -39,9 +39,13 @@
 			$c_attachments = get_posts( $args );
 			if ( $c_attachments ) {
 				foreach ( $c_attachments as $a ) {
+				$i = wp_get_attachment( $a->ID );
+				
 				$a_attributes = wp_get_attachment_image_src( $a->ID, 'full' );
+				$a_metadata = wp_get_attachment_metadata( $a->ID );
 				echo '<div class="col-md-2 each-logo">';
-				echo '<img src="'.$a_attributes[0].'">';
+				echo '<img src="' . $i['src'] . '" alt="' . $i['alt'] . '">';
+				echo '<span>' . $i['title'] .'</span>';
 				echo '</div><!-- .each-logo -->';
 		  		}
 			}

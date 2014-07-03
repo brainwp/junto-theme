@@ -558,11 +558,15 @@ a:active {
 	text-decoration: none;
 }
 
+.edit-link a:hover {
+	color: #FCFCFC;
+}
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .container {
-	width: 100% !important;
+	width: 94% !important;
 	max-width: 2000px;
 	margin: 0 auto;
 	background: #F1F1F1;
@@ -638,7 +642,16 @@ section.clientes .logos {
 }
 
 section.clientes .logos .each-logo {
+	text-align: center;
+}
+
+section.clientes .logos .each-logo img {
 	border-radius: 3px;
+}
+
+section.clientes .logos .each-logo span {
+	color: #777;
+	font-style: italic;
 }
 
 section.clientes .entry-footer {
