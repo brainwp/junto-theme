@@ -19,6 +19,15 @@ function _register_field_groups() {
 		'instructions' => 'Opções gerais para a home do site One Page',
 	);
 
+	$fields[] = array(
+		'key' => 'field_53b5683b35237',
+		'label' => 'Descrição',
+		'name' => '',
+		'type' => 'message',
+		'message' => 'A seção Clientes apresenta um grid de logos. Para isso ela depende diretamente da página Clientes.
+Adicione os logos, definidos aqui com a medida de 300x300px, nessa página Clientes e eles aparecerão automaticamente na seção Clientes.',
+	);
+
 	$fields[] =	array(
 		'key' => 'field_53b54b8302ac7',
 		'label' => 'Exibir seção Clientes',
@@ -26,7 +35,7 @@ function _register_field_groups() {
 		'type' => 'true_false',
 		'instructions' => 'Marque essa opção caso queira exibir a seção Clientes.',
 		'message' => '',
-		'default_value' => 1,
+		'default_value' => 0,
 	);
 
 	$fields[] =	array(

@@ -94,6 +94,7 @@ add_action( 'widgets_init', 'junto_theme_widgets_init' );
 function junto_theme_scripts() {
 	wp_enqueue_style( 'junto-theme-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'source-sans', get_stylesheet_directory_uri() . '/css/source-sans.css', false, '1.0.0' );
 
 	wp_enqueue_script( 'junto-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'junto-theme-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20120206', true );
@@ -119,7 +120,6 @@ function polis_admin_enqueue_scripts(){
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'source-sans', get_stylesheet_directory_uri() . '/css/source-sans.css', false, '1.0.0' );
 	wp_enqueue_style( 'style-admin', get_stylesheet_directory_uri() . '/css/style-admin.css', false, '1.0.0' );
-	wp_enqueue_style( 'rev-slider', get_stylesheet_directory_uri() . '/css/rev-slider.css', false, '1.0.0' );
 }
 
 /**

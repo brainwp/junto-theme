@@ -40,10 +40,11 @@ and Blueprint http://www.blueprintcss.org/
 	10.1 - Posts and pages
 	10.2 - Asides
 	10.3 - Comments
-11.0 - Infinite scroll
-12.0 - Media
-	12.1 - Captions
-	12.2 - Galleries
+11.0 - One Page Home
+12.0 - Infinite scroll
+13.0 - Media
+	13.1 - Captions
+	13.2 - Galleries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -133,7 +134,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif !important;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -546,13 +547,26 @@ a:active {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+.edit-link {
+	background: #BBB;
+	border-radius: 3px;
+	padding: 3px 5px;
+}
+
+.edit-link a {
+	color: #FFF;
+	text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .container {
+	width: 100% !important;
 	max-width: 2000px;
 	margin: 0 auto;
 	background: #F1F1F1;
+	padding: 0 !important;
 }
 .sticky {
 }
@@ -595,7 +609,46 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-11.0 Infinite scroll
+11.0 - One Page Home
+--------------------------------------------------------------*/
+.top-bg.clientes{
+	background: url('img/top-ligth-green.png') no-repeat center transparent;
+	height: 30px;
+	width: 100%;
+}
+
+section.clientes {
+	background: #F0FBF7;
+	padding: 10px 0 50px;
+}
+
+section.clientes .entry-content {
+	margin-top: 0;
+}
+
+section.clientes .entry-header h2 {
+	font-style: italic;
+	font-weight: 300;
+	text-align: center;
+}
+
+section.clientes .logos {
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+section.clientes .logos .each-logo {
+	border-radius: 3px;
+}
+
+section.clientes .entry-footer {
+	text-align: center;
+	margin: 0 auto;
+	padding: 30px 0 10px;
+}
+
+/*--------------------------------------------------------------
+12.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
@@ -608,7 +661,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-12.0 Media
+13.0 Media
 --------------------------------------------------------------*/
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
@@ -626,7 +679,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-12.1 Captions
+13.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
@@ -644,7 +697,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-12.2 Galleries
+13.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
 	margin-bottom: 1.5em;
