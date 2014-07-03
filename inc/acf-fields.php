@@ -38,6 +38,16 @@ Adicione os logos, definidos aqui com a medida de 300x300px, nessa página Clien
 		'default_value' => 0,
 	);
 
+	$fields[] = array(
+		'key' => 'field_53b5ab4b10b65',
+		'label' => 'Adicionar item ao menu?',
+		'name' => 'op_adicionar_clientes_menu',
+		'type' => 'true_false',
+		'instructions' => 'Marcando essa opção, o WordPress adicionará esse item ao menu.',
+		'message' => '',
+		'default_value' => 0,
+	);
+
 	$fields[] =	array(
 		'key' => 'field_53b54c3102ac9',
 		'label' => 'Exibir link para todos os Clientes',

@@ -5,8 +5,7 @@
  * @package Junto Theme
  */
 ?>
-
-<div class="top-bg clientes"></div>
+<div id="clientes" class="top-bg clientes"></div>
 <section class="col-md-12 clientes">
 	<header class="entry-header">
 		<h2>Clientes</h2>

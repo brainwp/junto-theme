@@ -20,8 +20,15 @@
 
 <body <?php body_class(); ?>>
 
-<div class= "container" >
+<nav class="home-menu">
+	<div class= "container" >
+		<?php get_template_part( 'parts/menu', 'menu' ); ?>
+	</div><!-- container -->
+</nav><!-- home-menu -->
+
+<div id="top" class="container" >
 	<div id="page" class="hfeed site">
+
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'junto-theme' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
