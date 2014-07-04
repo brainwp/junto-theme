@@ -12,14 +12,6 @@ function _register_field_groups() {
 	$fields = array();
 
 	$fields[] = array(
-		'key' => 'field_624d1d53741d4',
-		'label' => 'One Page Home',
-		'name' => '',
-		'type' => 'tab',
-		'instructions' => 'Opções gerais para a home do site One Page',
-	);
-
-	$fields[] = array(
 		'key' => 'field_53b5683b35237',
 		'label' => 'Descrição',
 		'name' => '',
