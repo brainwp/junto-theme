@@ -9,4 +9,5 @@
     $('#edit-slug-box').remove();
     $('#date').remove();
     $('#column-date').remove();
+    $('.row-actions').remove();
 })(jQuery);
