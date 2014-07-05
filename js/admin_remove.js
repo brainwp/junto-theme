@@ -10,4 +10,5 @@
     $('#date').remove();
     $('#column-date').remove();
     $('.row-actions').remove();
+    $('#title').attr('readonly','true');
 })(jQuery);
