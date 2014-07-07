@@ -14,8 +14,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-<?php the_field('op_exibir_clientes'); ?>
-			<?php if ( get_field('op_exibir_clientes') ) : ?>
+			<?php
+			$clientes = get_page_by_title('clientes', 'OBJECT', 'onepage');
+			if ( get_field('op_exibir_clientes', $clientes->ID) ) : ?>
 				<?php get_template_part( 'parts/content', 'clientes' ); ?>
 			<?php endif; ?>
 
