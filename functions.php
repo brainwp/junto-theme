@@ -206,6 +206,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+require get_template_directory() . '/inc/logos-clientes.php';
 
 /**
  * Customizer additions.
@@ -220,7 +221,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * ACF
  */
-define('ACF_LITE', true);
+define('ACF_LITE', false);
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 require get_template_directory() . '/inc/acf-fields.php';

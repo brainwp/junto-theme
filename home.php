@@ -14,8 +14,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php if ( get_field('op_exibir_clientes', 'option') ) : ?>
+<?php the_field('op_exibir_clientes'); ?>
+			<?php if ( get_field('op_exibir_clientes') ) : ?>
 				<?php get_template_part( 'parts/content', 'clientes' ); ?>
 			<?php endif; ?>
 
