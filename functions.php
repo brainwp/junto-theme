@@ -18,10 +18,23 @@ if (!function_exists('junto_theme_setup')) :
     function register_onepage_posts()
     {
         if (isset($_GET['activated']) && is_admin()){
+            //set permalink option
+            update_option( 'permalink_structure', '/%postname%/' );
+
+
             $defaults = array(
                 'post_status' => 'publish',
                 'post_name' => 'cases', // The name (slug) for your post
                 'post_title' => 'Cases', // The title of your post.
+                'post_type' => 'onepage',
+                'post_parent' => 0,
+            );
+// Insert the post into the database
+            wp_insert_post($defaults);
+            $defaults = array(
+                'post_status' => 'publish',
+                'post_name' => 'clientes', // The name (slug) for your post
+                'post_title' => 'Clientes', // The title of your post.
                 'post_type' => 'onepage',
                 'post_parent' => 0,
             );
@@ -207,13 +220,12 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * ACF
  */
-define('ACF_LITE', false);
+define('ACF_LITE', true);
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 require get_template_directory() . '/inc/acf-fields.php';
 //cpt das opçoes
 require get_template_directory() . '/inc/cpt-onepage.php';
-
 
 /**
  * Função para pegar o attachment de forma completa, como um post
