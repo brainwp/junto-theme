@@ -25,12 +25,12 @@
 
 			if ( ! empty( $c ) ) :
 
-				$meta = get_post_meta( $c->ID, '_link' );
-				$meta = explode(',', $meta[0]);
+				$c_logos = get_field( 'clientes_img_box', $c->ID );
+				$c_logos = explode(',', $c_logos);
 	
-				foreach ($meta as $image) {
+				foreach ($c_logos as $c_logo_id) {
 					echo '<div class="col-md-2 each-logo">';	
-					echo wp_get_attachment_image( $image, 'full' );
+					echo wp_get_attachment_image( $c_logo_id, 'full' );
 					echo '</div><!-- .each-logo -->';
 				}
 
