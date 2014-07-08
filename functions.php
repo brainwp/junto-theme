@@ -221,7 +221,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * ACF
  */
-define('ACF_LITE', false);
+define('ACF_LITE', true);
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 require get_template_directory() . '/inc/acf-fields.php';
