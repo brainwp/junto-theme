@@ -6,9 +6,8 @@ function _register_field_groups()
 
     if (!function_exists('register_field_group'))
         return false;
-
     /* Opções */
-    $post = get_page_by_path('clientes', OBJECT, 'onepage');
+    $_post = get_page_by_path('clientes', OBJECT, 'onepage');
     register_field_group(array(
         'id' => 'acf_clientes',
         'title' => 'Clientes',
@@ -58,7 +57,7 @@ function _register_field_groups()
                 array(
                     'param' => 'post',
                     'operator' => '==',
-                    'value' => $post->ID,
+                    'value' => $_post->ID,
                     'order_no' => 1,
                     'group_no' => 0,
                 ),
@@ -71,4 +70,26 @@ function _register_field_groups()
         ),
         'menu_order' => 0,
     ));
+
+    require get_template_directory() . '/inc/odin-metabox.php';
+    $clientes_img = new Odin_Metabox(
+        'clientes_img', // Slug/ID do Metabox (obrigatório)
+        'Clientes Imagens', // Nome do Metabox  (obrigatório)
+        'onepage', // Slug do Post Type, sendo possível enviar apenas um valor ou um array com vários (opcional)
+        'advanced', // Contexto (opções: normal, advanced, ou side) (opcional)
+        'high', // Prioridade (opções: high, core, default ou low) (opcional)
+        (string)$_post->ID
+    );
+    $clientes_img->set_fields(
+        array(
+            array(
+                'id' => 'clientes_img_box', // Obrigatório
+                'label' => 'Selecione ou faço upload dos logos de clientes', // Obrigatório
+                'type' => 'image_plupload', // Obrigatório
+                'default' => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                'description' => '', // Opcional
+            )
+        )
+    );
 }
+

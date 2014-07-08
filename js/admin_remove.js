@@ -11,4 +11,8 @@
     $('#column-date').remove();
     $('.row-actions').remove();
     $('#title').attr('readonly','true');
+    $('.brasa-remove-box').each(function(){
+        var box = $(this).attr('data-box-id');
+        $('#'+box).remove();
+    })
 })(jQuery);
