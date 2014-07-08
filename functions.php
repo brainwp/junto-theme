@@ -223,7 +223,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 define('ACF_LITE', true);
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
-require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
+//require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 require get_template_directory() . '/inc/acf-fields.php';
 //cpt das opçoes
 require get_template_directory() . '/inc/cpt-onepage.php';
