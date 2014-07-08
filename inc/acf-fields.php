@@ -84,7 +84,7 @@ function _register_field_groups()
         array(
             array(
                 'id' => 'clientes_img_box', // Obrigatório
-                'label' => 'Selecione ou faço upload dos logos de clientes', // Obrigatório
+                'label' => 'Selecione ou faça upload dos logos de clientes', // Obrigatório
                 'type' => 'image_plupload', // Obrigatório
                 'default' => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
                 'description' => '', // Opcional
