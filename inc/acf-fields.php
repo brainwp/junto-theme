@@ -44,6 +44,15 @@ function _register_field_groups()
                 'message' => '',
                 'default_value' => 0,
             ),
+            array(
+                'key' => 'field_53baab21e185e',
+                'label' => 'Exibir item no menu?',
+                'name' => 'op_exibir_menu_clientes',
+                'type' => 'true_false',
+                'instructions' => 'Marque essa opção para exibir o link Clientes no menu.',
+                'message' => '',
+                'default_value' => 1,
+            ),
         ),
         'location' => array(
             array(
