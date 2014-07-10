@@ -12,15 +12,12 @@ if (!isset($content_width)) {
     $content_width = 640; /* pixels */
 }
 
-
-
 if (!function_exists('junto_theme_setup')) :
     function register_onepage_posts()
     {
         if (isset($_GET['activated']) && is_admin()){
             //set permalink option
             update_option( 'permalink_structure', '/%postname%/' );
-
 
             $defaults = array(
                 'post_status' => 'publish',
@@ -221,7 +218,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * ACF
  */
-define('ACF_LITE', true);
+define('ACF_LITE', false);
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 //require get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 require get_template_directory() . '/inc/acf-fields.php';

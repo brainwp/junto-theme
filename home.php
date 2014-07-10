@@ -14,6 +14,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+			<?php
+			$cases = get_page_by_title('Cases', 'OBJECT', 'onepage');
+			if ( get_field('op_exibir_cases', $cases->ID) ) : ?>
+				<?php get_template_part( 'parts/content', 'cases' ); ?>
+			<?php endif; ?>
+
 			<?php
 			$clientes = get_page_by_title('clientes', 'OBJECT', 'onepage');
 			if ( get_field('op_exibir_clientes', $clientes->ID) ) : ?>
