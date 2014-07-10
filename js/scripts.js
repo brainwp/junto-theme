@@ -1,16 +1,25 @@
 (function($){
 	
 	$('.menu-clientes').on('click', function () {
-		$('a').removeClass('active');
+		$('span').removeClass('active');
 		$('html, body').animate({
-		    scrollTop: $("#clientes").offset().top-40
+		    scrollTop: $("section.clientes").offset().top-40
 		}, 2000);
 		$('.menu-clientes').removeClass('active');
 		$(this).addClass('active');
 	});
+
+	$('.menu-cases').on('click', function () {
+		$('span').removeClass('active');
+		$('html, body').animate({
+		    scrollTop: $("section.cases").offset().top-40
+		}, 2000);
+		$('.menu-cases').removeClass('active');
+		$(this).addClass('active');
+	});
 	 
 	$('.top').on('click', function () {
-		$('a').removeClass('active');
+		$('span').removeClass('active');
 		$('html, body').animate({
 		    scrollTop: $("#top").offset().top-40
 		}, 2000);

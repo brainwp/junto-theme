@@ -6,16 +6,16 @@
  */
 ?>
 
-<a class="top" href="#top">Junto</a>
+<span class="top" href="">Junto</span>
 
 <?php
 $cs = get_page_by_title('Cases', 'OBJECT', 'onepage');
 if ( get_field('op_exibir_menu_cases', $cs->ID) ) : ?>
-	<a class="menu-cases" href="#cases">Cases</a>
+	<span class="menu-cases" href="">Cases</span>
 <?php endif; ?>
 
 <?php
 $c = get_page_by_title('Clientes', 'OBJECT', 'onepage');
 if ( get_field('op_exibir_menu_clientes', $c->ID) ) : ?>
-	<a class="menu-clientes" href="#clientes">Clientes</a>
+	<span class="menu-clientes" href="">Clientes</span>
 <?php endif; ?>

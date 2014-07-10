@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying the content of the Clientes in home.php
+ * The template used for displaying the content of the Cases in home.php
  *
  * @package Junto Theme
  */
@@ -85,9 +85,9 @@
 					Solicite um orçamento para suas demandas
 				</div><!-- description -->
 			</div><!-- . -->
-			<div class="col-md-3">
+			<div class="col-md-3 btn-all-cases">
 				<a href="<?php echo home_url(); ?>/cases">Outros Cases</a>
-			</div><!-- . -->
+			</div><!-- .btn-all-cases -->
 
 	</footer><!-- .entry-footer -->
 

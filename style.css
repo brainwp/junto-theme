@@ -373,22 +373,24 @@ a:active {
 	background-color: transparent;
 }
 
-.home-menu a {
+.home-menu span {
 	width: auto;
 	float: left;
 	padding: 8px 25px 17px;
 	color: #FFF;
 	text-transform: uppercase;
+	cursor: pointer;
+	transition: 400ms ease all;
 }
 
-.home-menu a:hover {
+.home-menu span:hover {
 	background-color: #00675E;
 	padding-top: 12px;
 	padding-bottom: 15px;
 	color: #BFDFDC;
 }
 
-.home-menu a.active {
+.home-menu span.active {
 	background-color: #00675E;
 	padding-top: 12px;
 	padding-bottom: 15px;
@@ -606,6 +608,7 @@ a:active {
 }
 #page {
 	margin-top: 40px;
+	min-height: 4000px;
 }
 .sticky {
 }
@@ -778,6 +781,18 @@ section.cases .entry-footer .description {
 	padding-top: 20px;
 }
 
+section.cases .btn-all-cases {
+	color: #e0efeb;
+	font-size: 2em;
+	font-style: italic;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section.cases .btn-all-cases a {
+	color: #e0efeb;
+}
 
 /*--------------------------------------------------------------
 12.0 Infinite scroll

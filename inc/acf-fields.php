@@ -110,6 +110,15 @@ function _register_field_groups()
                 'step' => '',
             ),
             array(
+                'key' => 'field_53be6e5a6edbe',
+                'label' => 'Exibir Cases no menu?',
+                'name' => 'op_exibir_menu_cases',
+                'type' => 'true_false',
+                'instructions' => 'Marque essa opção para exibir o link Cases no menu',
+                'message' => '',
+                'default_value' => 1,
+            ),
+            array(
                 'key' => 'field_53be6bae6edb7',
                 'label' => 'Rodapé Cases',
                 'name' => '',
