@@ -63,6 +63,22 @@ if (!function_exists('junto_theme_setup')) :
                 'post_parent' => 0,
             );
             wp_insert_post($defaults);
+
+            $page = get_page_by_path('cases', OBJECT, 'onepage');
+            add_option( 'cases', $page->ID, '', 'yes' );
+
+            $page = get_page_by_path('clientes', OBJECT, 'onepage');
+            add_option( 'clientes', $page->ID, '', 'yes' );
+
+            $page = get_page_by_path('portfolio', OBJECT, 'onepage');
+            add_option( 'portfolio', $page->ID, '', 'yes' );
+
+            $page = get_page_by_path('metodologia', OBJECT, 'onepage');
+            add_option( 'metodologia', $page->ID, '', 'yes' );
+
+            $page = get_page_by_path('servicos', OBJECT, 'onepage');
+            add_option( 'servicos', $page->ID, '', 'yes' );
+
         }
     }
 
