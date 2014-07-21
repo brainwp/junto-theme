@@ -736,16 +736,23 @@ section.cases .content-cases {
 	overflow: hidden;
 	padding: 40px 0;
 	min-height: 300px;
+	position: relative;
 }
 
 section.cases .content-cases .caroufredsel_wrapper {
 	min-height: 300px;
 	overflow: hidden;
+	margin-left: 0 !important;
+	position: relative;
+}
+
+section.cases .content-cases .caroufredsel_wrapper ul li {
+	list-style: none;
 }
 
 section.cases .each-case {
 	min-height: 270px;
-	margin: 0 4% 25px;
+	margin: 0 5px 25px;
 	position: relative;
 }
 
@@ -763,6 +770,35 @@ section.cases .each-case .desc {
 	bottom: 0;
 	width: 90%;
 	display: block;
+}
+
+/* Setas do Slider Cases */
+section.cases .content-cases .prev-slider {
+	background: url('img/setas-slider.png') 0 0 no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 140px;
+	left: -10px;
+	cursor: pointer;
+}
+
+section.cases .content-cases .prev-slider:hover {
+	background-position: -2px -40px;
+}
+
+section.cases .content-cases .next-slider {
+	background: url('img/setas-slider.png') -40px 0 no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 140px;
+	right: -10px;
+	cursor: pointer;
+}
+
+section.cases .content-cases .next-slider:hover {
+	background-position: -38px -40px;
 }
 
 section.cases .entry-footer {

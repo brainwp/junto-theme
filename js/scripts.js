@@ -26,19 +26,20 @@
 		$('.top').removeClass('active');
 		$(this).addClass('active');
 	});
+
     $(document).ready(function(e){
         $('.slider_cases').carouFredSel({
             prev: '#prev-case',
             next: '#next-case',
             responsive: true,
             width: '100%',
-            height: 300,
+            height: 350,
             scroll: {
                 items: 1,
                 pauseOnHover: true
             },
             items: {
-                width: 250,
+                width: 350,
                 visible: {
                     min: 1,
                     max: 4
