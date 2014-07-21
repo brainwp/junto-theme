@@ -242,5 +242,41 @@ function _register_field_groups()
             )
         )
     );
+    //portfolio
+    if(function_exists("register_field_group"))
+    {
+        register_field_group(array (
+            'id' => 'acf_in_home',
+            'title' => 'Portfólio',
+            'fields' => array (
+                array (
+                    'key' => 'field_53cd386fba440',
+                    'label' => 'Visível na página inicial (home) ?',
+                    'name' => 'in_home',
+                    'type' => 'true_false',
+                    'message' => '',
+                    'default_value' => 1,
+                ),
+            ),
+            'location' => array (
+                array (
+                    array (
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'portfolio',
+                        'order_no' => 0,
+                        'group_no' => 0,
+                    ),
+                ),
+            ),
+            'options' => array (
+                'position' => 'normal',
+                'layout' => 'no_box',
+                'hide_on_screen' => array (
+                ),
+            ),
+            'menu_order' => 0,
+        ));
+    }
 }
 
