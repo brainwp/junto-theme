@@ -27,7 +27,7 @@
 
 			*/ ?>
 		
-<div class="col-md-12 list_carousel slider_cases">
+<div class="col-md-12 list_carousel">
 
         <?php
 	        $args = array(
@@ -36,7 +36,7 @@
 	        );
         ?>
 
-        <ul>
+        <ul class="slider_cases">
 
             <?php
             $portfolio = new WP_Query( $args );
