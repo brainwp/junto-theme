@@ -222,6 +222,121 @@ function _register_field_groups()
         'menu_order' => 0,
     ));
 
+    /* Metodologia */
+    $_metodologia = get_page_by_path('metodologia', OBJECT, 'onepage');
+    register_field_group(array (
+        'id' => 'acf_metodologia',
+        'title' => 'Metodologia',
+        'fields' => array (
+            array (
+                'key' => 'field_53cd7731328d0',
+                'label' => 'Exibir seção Metodologia?',
+                'name' => 'op_exibir_metodologia',
+                'type' => 'true_false',
+                'instructions' => 'Marque essa opção para exibir a seção Metodologia na Home do site',
+                'message' => '',
+                'default_value' => 1,
+            ),
+            array (
+                'key' => 'field_53cd776f328d1',
+                'label' => 'Exibir Metodologia no menu?',
+                'name' => 'metodologia_menu',
+                'type' => 'true_false',
+                'message' => '',
+                'default_value' => 0,
+            ),
+            array (
+                'key' => 'field_53cd778c328d2',
+                'label' => 'Primeira Metodologia',
+                'name' => 'primeira_metodologia',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+            array (
+                'key' => 'field_53cd77b4328d5',
+                'label' => 'Segunda Metodologia',
+                'name' => 'segunda_metodologia',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+            array (
+                'key' => 'field_53cd77b3328d4',
+                'label' => 'Terceira Metodologia',
+                'name' => 'terceira_metodologia',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+            array (
+                'key' => 'field_53cd77b1328d3',
+                'label' => 'Quarta Metodologia',
+                'name' => 'quarta_metodologia',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'onepage',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post',
+                    'operator' => '==',
+                    'value' => $_metodologia->ID,
+                    'order_no' => 0,
+                    'group_no' => 1,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+                0 => 'permalink',
+                1 => 'the_content',
+                2 => 'excerpt',
+                3 => 'custom_fields',
+                4 => 'discussion',
+                5 => 'comments',
+                6 => 'revisions',
+                7 => 'slug',
+                8 => 'author',
+                9 => 'format',
+                10 => 'featured_image',
+                11 => 'categories',
+                12 => 'tags',
+                13 => 'send-trackbacks',
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+
+
+
+
     require get_template_directory() . '/inc/odin-metabox.php';
     $clientes_img = new Odin_Metabox(
         'clientes_img', // Slug/ID do Metabox (obrigatório)
