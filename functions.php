@@ -89,6 +89,7 @@ if (!function_exists('junto_theme_setup')) :
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
+    
     function junto_theme_setup()
     {
 
@@ -108,7 +109,7 @@ if (!function_exists('junto_theme_setup')) :
          *
          * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
          */
-        //add_theme_support( 'post-thumbnails' );
+        add_theme_support( 'post-thumbnails' );
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
@@ -173,6 +174,7 @@ function junto_theme_scripts()
     wp_enqueue_script('jquery');
     wp_enqueue_script('junto-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
     wp_enqueue_script('junto-theme-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20120206', true);
+    wp_enqueue_script('junto-theme-caroufredsel', get_template_directory_uri() . '/js/caroufredsel/jquery.carouFredSel-6.2.1-packed.js', array(), '20120206', true );
     wp_enqueue_script('junto-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20120206', true);
 
     wp_enqueue_script('junto-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);

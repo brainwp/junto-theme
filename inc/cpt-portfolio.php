@@ -27,7 +27,7 @@ function register_cpt_portfolio() {
         'label'               => 'portfolio',
         'description'         => 'Post Type Description',
         'labels'              => $labels,
-        'supports'            => array( ),
+        'supports'            => array( 'title', 'editor', 'thumbnail' ),
         'taxonomies'          => array( 'category', 'post_tag' ),
         'hierarchical'        => false,
         'public'              => true,

@@ -735,6 +735,12 @@ section.cases .content-cases {
 	/*background-color: #333;*/
 	overflow: hidden;
 	padding: 40px 0;
+	min-height: 300px;
+}
+
+section.cases .content-cases .caroufredsel_wrapper {
+	min-height: 300px;
+	overflow: hidden;
 }
 
 section.cases .each-case {

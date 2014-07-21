@@ -27,4 +27,24 @@
 		$(this).addClass('active');
 	});
 
+	var $ = jQuery.noConflict();
+    $('.slider_cases').carouFredSel({
+        prev: '#prev-case',
+        next: '#next-case',
+        responsive: true,
+        width: '100%',
+        height: 300,
+        scroll: {
+            items: 1,
+            pauseOnHover: true
+        },
+        items: {
+            width: 250,
+            visible: {
+                min: 1,
+                max: 4
+            }
+        }
+    });
+
 })(jQuery);

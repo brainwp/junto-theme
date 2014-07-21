@@ -26,25 +26,53 @@
 				}
 
 			*/ ?>
-			
-			<div class="col-md-3 each-case">
-				<div class="img"></div>
-				<div class="desc">
-					Criação Promocional Digital
-				</div>
-			</div><!-- .each-case -->
-			<div class="col-md-3 each-case">
-				<div class="img"></div>
-				<div class="desc">
-					Identidade Visual
-				</div>
-			</div><!-- .each-case -->
-			<div class="col-md-3 each-case">
-				<div class="img"></div>
-				<div class="desc">
-					Estratégia de Mídias Sociais
-				</div>
-			</div><!-- .each-case -->
+		
+<div class="col-md-12 list_carousel slider_cases">
+
+        <?php
+	        $args = array(
+	            'post_type' => 'portfolio',
+	            'posts_per_page' => 10,
+	        );
+        ?>
+
+        <ul>
+
+            <?php
+            $portfolio = new WP_Query( $args );
+            while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
+
+                <li class="col-md-3 each-case">
+                    <a href="<?php the_permalink(); ?>">
+
+						<div class="img">
+                        <?php
+	                        if (has_post_thumbnail()) {
+	                            $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'slider-publicacoes-image', true);
+	                            echo '<img src="' . $thumb_url[0] . '"/>';
+	                        } else {
+	                            echo '<img src="' . get_bloginfo('template_url') . '/img/thumb-portfolio.png"/>';
+	                        }
+                        ?>
+                        </div>
+                        <div class="col-md-12 desc">
+                            <?php the_title(); ?>
+                        </div><!-- .desc -->
+                    </a>
+
+                </li><!-- .col-md-3 each-case -->
+
+            <?php endwhile; ?>
+
+        </ul>
+
+    </div><!-- col-md-12 list_carousel slider_cases -->
+
+    <div class="prev-slider" id="prev-case"></div>
+    <div class="next-slider" id="next-case"></div>
+
+    <div class="clear"></div>
+
 
 			<?php /*
 			endif;
