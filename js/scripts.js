@@ -12,7 +12,7 @@
 	$('.menu-metodologia').on('click', function () {
 		$('span').removeClass('active');
 		$('html, body').animate({
-		    scrollTop: $("section.metodologia").offset().top-40
+		    scrollTop: $("section.metodologia").offset().top-60
 		}, 2000);
 		$('.menu-metodologia').removeClass('active');
 		$(this).addClass('active');

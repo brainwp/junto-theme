@@ -34,7 +34,6 @@
 					echo '</div><!-- .each-logo -->';
 				}
 
-
 			endif;
 	    	?>
 		
