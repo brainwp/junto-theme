@@ -366,7 +366,7 @@ a:active {
 	width: 100%;
 	height: 40px;
 	position: fixed;
-	z-index: 9999;
+	z-index: 99999999;
 	-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 	-moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 	box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.3);
@@ -591,12 +591,12 @@ a:active {
 }
 
 .edit-link a {
-	color: #FFF;
+	color: #212121;
 	text-decoration: none;
 }
 
 .edit-link a:hover {
-	color: #FCFCFC;
+	color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -722,6 +722,11 @@ section.metodologia .entry-content .each .title {
 	margin: 5px auto;
 }
 
+section.metodologia .entry-footer {
+	text-align: center;
+	padding: 30px 0 10px;
+}
+
 .bottom-bg.metodologia {
 	background: url('img/seta-verde.png') center top no-repeat transparent;
 	height: 27px;
@@ -829,6 +834,10 @@ section.cases .each-case .img {
 	height: 240px;
 	background-color: #000;
 	overflow: hidden;
+	text-align: center;
+}
+
+section.cases .each-case .img img {
 }
 
 section.cases .each-case .desc {

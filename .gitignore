@@ -1,0 +1,12 @@
+.htaccess
+
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+
+.vagrant
+
+sftp-config.json
+
+*.swp
+*.swo

@@ -48,7 +48,7 @@
 						<div class="img">
                         <?php
 	                        if (has_post_thumbnail()) {
-	                            $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'slider-publicacoes-image', true);
+	                            $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium', true);
 	                            echo '<img src="' . $thumb_url[0] . '"/>';
 	                        } else {
 	                            echo '<img src="' . get_bloginfo('template_url') . '/img/thumb-portfolio.png"/>';

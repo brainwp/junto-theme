@@ -37,27 +37,34 @@
 			</div><!-- .each -->
 			<div class="each">
 				<span class="number">2</span>
+				<span class="title">
+					<?php echo get_field( 'titulo_segunda_metodologia', $m->ID ) ?>
+				</span> 
 				<?php echo $m_each['1']; ?>
 			</div><!-- .each -->
 			<div class="each">
 				<span class="number">3</span>
+				<span class="title">
+					<?php echo get_field( 'titulo_terceira_metodologia', $m->ID ) ?>
+				</span> 
 				<?php echo $m_each['2']; ?>
 			</div><!-- .each -->
 			<div class="each">
 				<span class="number">4</span>
+				<span class="title">
+					<?php echo get_field( 'titulo_quarta_metodologia', $m->ID ) ?>
+				</span> 
 				<?php echo $m_each['3']; ?>
 			</div><!-- .each -->
 		
 		</div><!-- .metodos -->
 
-	    <?php
-	    	unset( $m );
-	    ?>   
-
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Adicionar ou remover logos', 'junto-theme' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edite a seção Metodologia', 'junto-theme' ), '<span class="edit-link">', '</span>', $m->ID ); ?>
 	</footer><!-- .entry-footer -->
 </section><!-- .metodologia -->
 <div class="bottom-bg metodologia"></div>
+
+<?php unset( $m ); ?>
