@@ -366,7 +366,10 @@ a:active {
 	width: 100%;
 	height: 40px;
 	position: fixed;
-	z-index: 9999;
+	z-index: 99999999;
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 }
 
 .home-menu .container {
@@ -588,12 +591,12 @@ a:active {
 }
 
 .edit-link a {
-	color: #FFF;
+	color: #212121;
 	text-decoration: none;
 }
 
 .edit-link a:hover {
-	color: #FCFCFC;
+	color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -665,6 +668,75 @@ a:active {
 	margin: 120px auto 0;
 }
 
+/* Metodologia */
+section.metodologia {
+	background: #008175;
+	padding: 10px 0 50px;	
+	color: #FFF;
+}
+
+section.metodologia .entry-header h2 {
+	color: #e0efeb;
+	font-style: italic;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section.metodologia .entry-content {
+	margin-top: 0;
+	max-width: 1100px;
+	margin: auto;
+}
+
+section.metodologia .entry-content .each {
+	float: left;
+	text-align: center;
+	margin-left: 5%;
+	width: 20%;
+}
+
+section.metodologia .entry-content .each:first-child {
+	margin-left: 0
+}
+
+section.metodologia .entry-content .each .number {
+	border: 1px solid #FFF;
+	display: inline-block;
+	font-size: 3em;
+	margin: 30px 30% 15px;
+	height: 65px;
+	width: 65px;
+	vertical-align:middle;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+section.metodologia .entry-content .each .title {
+	width: 100%;
+	font-size: 1.3em;
+	text-align: center;
+	display: block;
+	margin: 5px auto;
+}
+
+section.metodologia .entry-footer {
+	text-align: center;
+	padding: 30px 0 10px;
+}
+
+.bottom-bg.metodologia {
+	background: url('img/seta-verde.png') center top no-repeat transparent;
+	height: 27px;
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	z-index: 99999;
+}
+
 /* Clientes */
 .top-bg.clientes{
 	background: url('img/top-ligth-green.png') no-repeat center transparent;
@@ -713,12 +785,13 @@ section.clientes .entry-footer {
 	padding: 30px 0 10px;
 }
 
-/* Cases*/
+/* Cases */
 section.cases {
 	background: url('img/bg-preto.png') center transparent;
 	min-height: 400px;
-	padding: 10px 0 50px;
+	padding: 37px 0 50px;
 	width: 100%;
+	margin-top: -27px;
 }
 
 section.cases .entry-header h2 {
@@ -736,16 +809,23 @@ section.cases .content-cases {
 	overflow: hidden;
 	padding: 40px 0;
 	min-height: 300px;
+	position: relative;
 }
 
 section.cases .content-cases .caroufredsel_wrapper {
 	min-height: 300px;
 	overflow: hidden;
+	margin-left: 0 !important;
+	position: relative;
+}
+
+section.cases .content-cases .caroufredsel_wrapper ul li {
+	list-style: none;
 }
 
 section.cases .each-case {
 	min-height: 270px;
-	margin: 0 4% 25px;
+	margin: 0 5px 25px;
 	position: relative;
 }
 
@@ -753,6 +833,11 @@ section.cases .each-case .img {
 	width: 100%;
 	height: 240px;
 	background-color: #000;
+	overflow: hidden;
+	text-align: center;
+}
+
+section.cases .each-case .img img {
 }
 
 section.cases .each-case .desc {
@@ -763,6 +848,35 @@ section.cases .each-case .desc {
 	bottom: 0;
 	width: 90%;
 	display: block;
+}
+
+/* Setas do Slider Cases */
+section.cases .content-cases .prev-slider {
+	background: url('img/setas-slider.png') 0 0 no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 140px;
+	left: -10px;
+	cursor: pointer;
+}
+
+section.cases .content-cases .prev-slider:hover {
+	background-position: -2px -40px;
+}
+
+section.cases .content-cases .next-slider {
+	background: url('img/setas-slider.png') -40px 0 no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 140px;
+	right: -10px;
+	cursor: pointer;
+}
+
+section.cases .content-cases .next-slider:hover {
+	background-position: -38px -40px;
 }
 
 section.cases .entry-footer {

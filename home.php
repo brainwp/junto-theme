@@ -16,6 +16,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php
+			$metodologia = get_page_by_title('metodologia', 'OBJECT', 'onepage');
+			if ( get_field('op_exibir_metodologia', $metodologia->ID) ) : ?>
+				<?php get_template_part( 'parts/content', 'metodologia' ); ?>
+			<?php endif; ?>
+
+			<?php
 			$cases = get_page_by_title('Cases', 'OBJECT', 'onepage');
 			if ( get_field('op_exibir_cases', $cases->ID) ) : ?>
 				<?php get_template_part( 'parts/content', 'cases' ); ?>
