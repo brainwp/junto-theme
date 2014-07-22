@@ -5,10 +5,10 @@
  * @package Junto Theme
  */
 ?>
-<div id="metodologia" class="top-bg"></div>
+<div id="metodologia"></div>
 <section class="col-md-12 metodologia">
 	<header class="entry-header">
-		<h2>Clientes</h2>
+		<h2>Como Fazemos?</h2>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -17,11 +17,11 @@
 			$m = get_page_by_title('metodologia', 'OBJECT', 'onepage');
 
 			if ( ! empty( $m ) ) :
-
-				$m_1 = get_field( 'primeira_metodologia', $m->ID );
-				$m_2 = get_field( 'segunda_metodologia', $m->ID );
-				$m_3 = get_field( 'terceira_metodologia', $m->ID );
-				$m_4 = get_field( 'quarta_metodologia', $m->ID );
+				$m_each = array();
+				$m_each['0'] = get_field( 'primeira_metodologia', $m->ID );
+				$m_each['1'] = get_field( 'segunda_metodologia', $m->ID );
+				$m_each['2'] = get_field( 'terceira_metodologia', $m->ID );
+				$m_each['3'] = get_field( 'quarta_metodologia', $m->ID );
 
 			endif;
 	    ?>
@@ -29,16 +29,23 @@
 		<div class="metodos">
 
 			<div class="each">
-				<?php echo $m_1; ?>
+				<span class="number">1</span>
+				<span class="title">
+					<?php echo get_field( 'titulo_primeira_metodologia', $m->ID ) ?>
+				</span> 
+				<?php echo $m_each['0']; ?>
 			</div><!-- .each -->
 			<div class="each">
-				<?php echo $m_2; ?>
+				<span class="number">2</span>
+				<?php echo $m_each['1']; ?>
 			</div><!-- .each -->
 			<div class="each">
-				<?php echo $m_3; ?>
+				<span class="number">3</span>
+				<?php echo $m_each['2']; ?>
 			</div><!-- .each -->
 			<div class="each">
-				<?php echo $m_4; ?>
+				<span class="number">4</span>
+				<?php echo $m_each['3']; ?>
 			</div><!-- .each -->
 		
 		</div><!-- .metodos -->
@@ -53,3 +60,4 @@
 		<?php edit_post_link( __( 'Adicionar ou remover logos', 'junto-theme' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </section><!-- .metodologia -->
+<div class="bottom-bg metodologia"></div>

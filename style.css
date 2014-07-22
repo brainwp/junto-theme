@@ -367,6 +367,9 @@ a:active {
 	height: 40px;
 	position: fixed;
 	z-index: 9999;
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 }
 
 .home-menu .container {
@@ -672,6 +675,14 @@ section.metodologia {
 	color: #FFF;
 }
 
+section.metodologia .entry-header h2 {
+	color: #e0efeb;
+	font-style: italic;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 section.metodologia .entry-content {
 	margin-top: 0;
 	max-width: 1100px;
@@ -687,6 +698,38 @@ section.metodologia .entry-content .each {
 
 section.metodologia .entry-content .each:first-child {
 	margin-left: 0
+}
+
+section.metodologia .entry-content .each .number {
+	border: 1px solid #FFF;
+	display: inline-block;
+	font-size: 3em;
+	margin: 30px 30% 15px;
+	height: 65px;
+	width: 65px;
+	vertical-align:middle;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+section.metodologia .entry-content .each .title {
+	width: 100%;
+	font-size: 1.3em;
+	text-align: center;
+	display: block;
+	margin: 5px auto;
+}
+
+.bottom-bg.metodologia {
+	background: url('img/seta-verde.png') center top no-repeat transparent;
+	height: 27px;
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	z-index: 99999;
 }
 
 /* Clientes */
@@ -741,8 +784,9 @@ section.clientes .entry-footer {
 section.cases {
 	background: url('img/bg-preto.png') center transparent;
 	min-height: 400px;
-	padding: 10px 0 50px;
+	padding: 37px 0 50px;
 	width: 100%;
+	margin-top: -27px;
 }
 
 section.cases .entry-header h2 {

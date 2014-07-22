@@ -227,8 +227,8 @@ function _register_field_groups()
     register_field_group(array (
         'id' => 'acf_metodologia',
         'title' => 'Metodologia',
-        'fields' => array (
-            array (
+        'fields' => array(
+            array(
                 'key' => 'field_53cd7731328d0',
                 'label' => 'Exibir seção Metodologia?',
                 'name' => 'op_exibir_metodologia',
@@ -237,7 +237,7 @@ function _register_field_groups()
                 'message' => '',
                 'default_value' => 1,
             ),
-            array (
+            array(
                 'key' => 'field_53cd776f328d1',
                 'label' => 'Exibir Metodologia no menu?',
                 'name' => 'metodologia_menu',
@@ -245,7 +245,19 @@ function _register_field_groups()
                 'message' => '',
                 'default_value' => 0,
             ),
-            array (
+            array(
+                'key' => 'field_53ce41e3e65c7',
+                'label' => 'Título da Primeira Metodologia',
+                'name' => 'titulo_primeira_metodologia',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_53cd778c328d2',
                 'label' => 'Primeira Metodologia',
                 'name' => 'primeira_metodologia',
@@ -256,7 +268,19 @@ function _register_field_groups()
                 'rows' => '',
                 'formatting' => 'br',
             ),
-            array (
+            array(
+                'key' => 'field_53ce4212e65c8',
+                'label' => 'Título da Segunda Metodologia',
+                'name' => 'titulo_segunda_metodologia',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_53cd77b4328d5',
                 'label' => 'Segunda Metodologia',
                 'name' => 'segunda_metodologia',
@@ -267,7 +291,19 @@ function _register_field_groups()
                 'rows' => '',
                 'formatting' => 'br',
             ),
-            array (
+            array(
+                'key' => 'field_53ce42dbe65c9',
+                'label' => 'Título da Terceira Metodologia',
+                'name' => 'titulo_terceira_metodologia',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_53cd77b3328d4',
                 'label' => 'Terceira Metodologia',
                 'name' => 'terceira_metodologia',
@@ -278,7 +314,19 @@ function _register_field_groups()
                 'rows' => '',
                 'formatting' => 'br',
             ),
-            array (
+            array(
+                'key' => 'field_53ce42f4e65ca',
+                'label' => 'Título da Quarta Metodologia',
+                'name' => 'titulo_quarta_metodologia',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_53cd77b1328d3',
                 'label' => 'Quarta Metodologia',
                 'name' => 'quarta_metodologia',
@@ -290,9 +338,9 @@ function _register_field_groups()
                 'formatting' => 'br',
             ),
         ),
-        'location' => array (
-            array (
-                array (
+        'location' => array(
+            array(
+                array(
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'onepage',
@@ -300,8 +348,8 @@ function _register_field_groups()
                     'group_no' => 0,
                 ),
             ),
-            array (
-                array (
+            array(
+                array(
                     'param' => 'post',
                     'operator' => '==',
                     'value' => $_metodologia->ID,
