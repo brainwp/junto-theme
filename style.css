@@ -671,8 +671,12 @@ a:active {
 /* Metodologia */
 section.metodologia {
 	background: #008175;
-	padding: 10px 0 50px;	
+	padding: 10px 0 40px;	
 	color: #FFF;
+}
+
+section.metodologia .entry-header {
+	padding: 15px 0 0 0;
 }
 
 section.metodologia .entry-header h2 {
@@ -681,6 +685,13 @@ section.metodologia .entry-header h2 {
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+section.metodologia .entry-header .sub-title {
+	color: #d7ece7; /* Verde Claro */
+	display: block;
+	font-size: 1em;
+	text-align: center;
 }
 
 section.metodologia .entry-content {
@@ -692,18 +703,29 @@ section.metodologia .entry-content {
 section.metodologia .entry-content .each {
 	float: left;
 	text-align: center;
-	margin-left: 5%;
-	width: 20%;
+	width: 24.2%;
+	padding: 20px 30px;
+}
+
+section.metodologia .linha-vertical {
+ 	background-color: #fff;
+    display: block;
+    float: left;
+    height: 200px;
+    margin: 100px 5px;
+    overflow: hidden;
+    width: 1px;
 }
 
 section.metodologia .entry-content .each:first-child {
-	margin-left: 0
+	/*margin-left: 0*/
 }
 
 section.metodologia .entry-content .each .number {
-	border: 1px solid #FFF;
+	background-color: #FFF;
 	display: inline-block;
 	font-size: 3em;
+	color: #008175;
 	margin: 30px 30% 15px;
 	height: 65px;
 	width: 65px;
@@ -716,10 +738,16 @@ section.metodologia .entry-content .each .number {
 
 section.metodologia .entry-content .each .title {
 	width: 100%;
-	font-size: 1.3em;
+	font-size: 2em;
+	font-weight: 300;
 	text-align: center;
 	display: block;
-	margin: 5px auto;
+	margin: 10px auto 7px;
+}
+
+section.metodologia .entry-content .each .desc {
+	color: #d7ece7; /* Verde Claro */
+	font-size: 0.9em;
 }
 
 section.metodologia .entry-footer {
