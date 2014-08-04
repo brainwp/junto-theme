@@ -17,7 +17,7 @@ if ( get_field('op_exibir_metodologia', $mt) ) : ?>
 <?php
 $mi = get_option('missao');
 if ( get_field('op_menu_missao', $mi) ) : ?>
-	<span class="menu-missao" href="">Missão</span>
+	<span class="menu-missao" data-element="#missao_section">Missão</span>
 <?php endif; ?>
 
 <?php
@@ -29,5 +29,5 @@ if ( get_field('op_exibir_menu_cases', $cs) ) : ?>
 <?php
 $c = get_option('clientes');
 if ( get_field('op_exibir_menu_clientes', $c) ) : ?>
-	<span class="top_menu menu-clientes" data-element="#clientes">Clientes</span>
+	<span class="top_menu menu-clientes" data-element="#clientes_section">Clientes</span>
 <?php endif; ?>
