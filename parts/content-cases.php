@@ -9,6 +9,7 @@
 <section class="col-md-12 cases" id="cases_section">
 	<header class="entry-header">
 		<h2>Cases</h2>
+		<span class="sub-title">[ Conheça alguns trabalhos realizados ]</span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -119,9 +120,13 @@
 					Solicite um orçamento para suas demandas
 				</div><!-- description -->
 			</div><!-- . -->
-			<div class="col-md-3 btn-all-cases">
-				<a href="<?php echo home_url(); ?>/cases">Outros Cases</a>
-			</div><!-- .btn-all-cases -->
+			<div class="col-md-3">
+				<div class="btn-all-cases">
+					<div class="barra-esquerda"></div>
+					<div class="barra-direita"></div>
+					<a href="<?php echo home_url(); ?>/cases">Outros Cases</a>
+				</div>
+			</div>
 
 	</footer><!-- .entry-footer -->
 

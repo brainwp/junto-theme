@@ -643,7 +643,6 @@ a:active {
 }
 #page {
 	margin-top: 40px;
-	min-height: 3000px;
 }
 .sticky {
 }
@@ -779,7 +778,6 @@ section.metodologia .entry-content .each .title {
 
 section.metodologia .entry-content .each .desc {
 	color: #d7ece7; /* Verde Claro */
-	font-size: 0.9em;
 }
 
 section.metodologia .entry-footer {
@@ -823,7 +821,6 @@ section.clientes .entry-header .sub-title {
 	text-align: center;
 	margin-bottom: 15px;
 }
-
 
 section.clientes .entry-content {
 	margin-top: 0;
@@ -870,6 +867,13 @@ section.cases .entry-header h2 {
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+section.cases .entry-header .sub-title {
+	color: #d7ece7; /* Verde Claro */
+	display: block;
+	font-size: 1em;
+	text-align: center;
 }
 
 section.cases .content-cases {
@@ -974,16 +978,26 @@ section.cases .entry-footer .description {
 }
 
 section.cases .btn-all-cases {
+	max-width: 70%;
+	margin: 0 auto;
 	color: #e0efeb;
 	font-size: 2em;
 	font-style: italic;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
+	position: relative;
+	height: 85px;
 }
 
 section.cases .btn-all-cases a {
 	color: #e0efeb;
+	max-width: 70%;
+	display: inline-block;
+}
+
+section.cases .btn-all-cases a:hover {
+	text-decoration: none;
 }
 
 /* Missão */
