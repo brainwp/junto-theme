@@ -37,6 +37,7 @@
 	});
 
     $(document).ready(function(e){
+        $('.top_menu.top').css('display','none');
         $('.slider_cases').carouFredSel({
             prev: '#prev-case',
             next: '#next-case',
@@ -55,5 +56,35 @@
                 }
             }
         });
+
+        var active_link_menu = function(){
+            var cutoff = $(window).scrollTop();
+            var cutoffRange = cutoff + 200;
+
+            var curSec = $.find('.current');
+            var curID = $(curSec).attr('id');
+            var curNav = $.find('a[name='+curID+']');
+            $(curNav).addClass('active');
+
+            $('.top_menu').each(function(){
+                var element = $(this).attr('data-element');
+                if ($(element).offset().top > cutoff && $(element).offset().top < cutoffRange) {
+                    $('.top_menu.active').removeClass('active')
+                    $(this).addClass('active');
+                    return false; //da break no each
+                }
+            });
+            if (cutoff > $('#junto_section').offset().top) {
+                $('.top_menu.top').show('slow');
+            }
+            else{
+                $('.top_menu.top').css('display','none');
+            }
+        }
+        $(window).scroll(function () {
+            active_link_menu();
+        });
+
     });
+    //function to generate the onepage menu
 })(jQuery);

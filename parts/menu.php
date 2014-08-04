@@ -6,12 +6,12 @@
  */
 ?>
 
-<span class="top" href=""></span>
+<span class="top_menu top active" data-element="#junto">Junto</span>
 
 <?php
 $mt = get_option('metodologia');
 if ( get_field('op_exibir_metodologia', $mt) ) : ?>
-	<span class="menu-metodologia" href="">Metodologia</span>
+	<span class="top_menu menu-metodologia" data-element="#metodologia">Metodologia</span>
 <?php endif; ?>
 
 <?php
@@ -23,11 +23,11 @@ if ( get_field('op_menu_missao', $mi) ) : ?>
 <?php
 $cs = get_option('cases');
 if ( get_field('op_exibir_menu_cases', $cs) ) : ?>
-	<span class="menu-cases" href="">Cases</span>
+	<span class="top_menu menu-cases" data-element="#cases_section">Cases</span>
 <?php endif; ?>
 
 <?php
 $c = get_option('clientes');
 if ( get_field('op_exibir_menu_clientes', $c) ) : ?>
-	<span class="menu-clientes" href="">Clientes</span>
+	<span class="top_menu menu-clientes" data-element="#clientes">Clientes</span>
 <?php endif; ?>

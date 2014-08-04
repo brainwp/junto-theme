@@ -559,4 +559,3 @@ function _register_field_groups()
         ));
     }
 }
-
