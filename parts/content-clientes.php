@@ -4,6 +4,7 @@
  *
  * @package Junto Theme
  */
+
 ?>
 <div id="clientes" class="top-bg sclientes"></div>
 <section class="col-md-12 clientes" id="clientes_section">
