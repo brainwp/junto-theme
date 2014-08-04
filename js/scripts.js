@@ -26,6 +26,15 @@
 		$('.menu-cases').removeClass('active');
 		$(this).addClass('active');
 	});
+
+    $('.menu-missao').on('click', function () {
+        $('span').removeClass('active');
+        $('html, body').animate({
+            scrollTop: $("section.missao").offset().top-60
+        }, 2000);
+        $('.menu-missao').removeClass('active');
+        $(this).addClass('active');
+    });
 	 
 	$('.top').on('click', function () {
 		$('span').removeClass('active');
