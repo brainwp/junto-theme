@@ -383,7 +383,7 @@ a:active {
 	width: 100%;
 	height: 40px;
 	position: fixed;
-	z-index: 99999999;
+	z-index: 9;
 	-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 	-moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 	box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.3);
@@ -414,6 +414,21 @@ a:active {
 	background-color: #00675E;
 	padding-top: 12px;
 	padding-bottom: 15px;
+}
+
+.home-menu .top {
+	background: url('img/logos/mini-logo-junto-menu.png') center center no-repeat;
+	height: 37px;
+	padding: 8px 25px 17px;
+	width: 90px;
+	cursor: pointer;
+	transition: 400ms ease all;
+}
+
+.home-menu .top.active, .home-menu .top:hover {
+	background-color: #00675E;
+	padding-top: 17px;
+	padding-bottom: 30px;
 }
 
 .main-navigation {
@@ -628,7 +643,7 @@ a:active {
 }
 #page {
 	margin-top: 40px;
-	min-height: 4000px;
+	min-height: 3000px;
 }
 .sticky {
 }
@@ -798,7 +813,17 @@ section.clientes .entry-header h2 {
 	font-style: italic;
 	font-weight: 300;
 	text-align: center;
+	text-transform: uppercase;
 }
+
+section.clientes .entry-header .sub-title {
+	color: #888;
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
 
 section.clientes .entry-content {
 	margin-top: 0;

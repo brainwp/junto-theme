@@ -9,6 +9,7 @@
 <section class="col-md-12 clientes">
 	<header class="entry-header">
 		<h2>Clientes</h2>
+		<span class="sub-title">[ Alguns clientes que já Juntamos ]</span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
