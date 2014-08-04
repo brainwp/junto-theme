@@ -55,5 +55,16 @@
                 }
             }
         });
+        $('.top_menu').each(function(){
+            
+        });
+        var active_link_menu = function(){
+
+        }
+        $(window).scroll(function () {
+            active_link_menu();
+        });
+
     });
+    //function to generate the onepage menu
 })(jQuery);
