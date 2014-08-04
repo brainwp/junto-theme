@@ -6,7 +6,7 @@
  */
 ?>
 
-<span class="top_menu top active" data-element="#junto">Junto</span>
+<span class="top_menu top active" data-element="#junto"></span>
 
 <?php
 $mt = get_option('metodologia');
