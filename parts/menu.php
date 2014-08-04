@@ -6,7 +6,7 @@
  */
 ?>
 
-<span class="top_menu top active">Junto</span>
+<span class="top_menu top active" data-element="#junto">Junto</span>
 
 <?php
 $mt = get_option('metodologia');
@@ -17,7 +17,7 @@ if ( get_field('op_exibir_metodologia', $mt) ) : ?>
 <?php
 $cs = get_option('cases');
 if ( get_field('op_exibir_menu_cases', $cs) ) : ?>
-	<span class="top_menu menu-cases" data-element="#cases">Cases</span>
+	<span class="top_menu menu-cases" data-element="#cases_section">Cases</span>
 <?php endif; ?>
 
 <?php

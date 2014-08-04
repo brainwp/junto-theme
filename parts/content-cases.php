@@ -6,7 +6,7 @@
  */
 ?>
 <div id="cases" class="top-bg cases"></div>
-<section class="col-md-12 cases">
+<section class="col-md-12 cases" id="cases_section">
 	<header class="entry-header">
 		<h2>Cases</h2>
 	</header><!-- .entry-header -->

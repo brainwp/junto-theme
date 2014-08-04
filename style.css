@@ -1173,3 +1173,6 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+.container{
+    transition:400ms ease all;
+}
