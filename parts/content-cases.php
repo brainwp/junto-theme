@@ -33,7 +33,14 @@
 	        $args = array(
 	            'post_type' => 'portfolio',
 	            'posts_per_page' => 10,
-	        );
+                'meta_query' => array(
+                    array(
+                        'key' => 'in_home',
+                        'value' => '1',
+                        'compare' => '=='
+                    )
+                )
+            );
         ?>
 
         <ul class="slider_cases">
@@ -44,7 +51,6 @@
 
                 <li class="col-md-3 each-case">
                     <a href="<?php the_permalink(); ?>">
-
 						<div class="img">
                         <?php
 	                        if (has_post_thumbnail()) {

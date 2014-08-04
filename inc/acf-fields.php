@@ -1,4 +1,9 @@
 <?php
+add_action('acf/register_fields', 'my_register_fields');
+function my_register_fields()
+{
+    include_once(get_template_directory() . '/inc/acf-repeater/repeater.php');
+}
 
 add_action('init', '_register_field_groups', 999);
 function _register_field_groups()
@@ -347,14 +352,12 @@ function _register_field_groups()
                     'order_no' => 0,
                     'group_no' => 0,
                 ),
-            ),
-            array(
                 array(
                     'param' => 'post',
                     'operator' => '==',
                     'value' => $_metodologia->ID,
-                    'order_no' => 0,
-                    'group_no' => 1,
+                    'order_no' => 1,
+                    'group_no' => 0,
                 ),
             ),
         ),
@@ -405,5 +408,124 @@ function _register_field_groups()
             )
         )
     );
+    //portfolio
+    if(function_exists("register_field_group"))
+    {
+        register_field_group(array (
+            'id' => 'acf_in_home',
+            'title' => 'Portfólio',
+            'fields' => array (
+                array (
+                    'key' => 'field_53cd386fba440',
+                    'label' => 'Visível na página inicial (home) ?',
+                    'name' => 'in_home',
+                    'type' => 'true_false',
+                    'message' => '',
+                    'default_value' => 1,
+                ),
+            ),
+            'location' => array (
+                array (
+                    array (
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'portfolio',
+                        'order_no' => 0,
+                        'group_no' => 0,
+                    ),
+                ),
+            ),
+            'options' => array (
+                'position' => 'normal',
+                'layout' => 'no_box',
+                'hide_on_screen' => array (
+                ),
+            ),
+            'menu_order' => 0,
+        ));
+    }
+    //missao
+    $_missao = get_page_by_path('metodologia', OBJECT, 'onepage');
+    if(function_exists("register_field_group"))
+    {
+        register_field_group(array (
+            'id' => 'acf_missao',
+            'title' => 'Missão',
+            'fields' => array (
+                array (
+                    'key' => 'field_53dfbedacaff5',
+                    'label' => 'Missão',
+                    'name' => 'missao_repeater',
+                    'type' => 'repeater',
+                    'sub_fields' => array (
+                        array (
+                            'key' => 'field_53dfbf5dcaff7',
+                            'label' => 'Título',
+                            'name' => 'missao_repeater_titulo',
+                            'type' => 'text',
+                            'column_width' => '',
+                            'default_value' => '',
+                            'placeholder' => '',
+                            'prepend' => '',
+                            'append' => '',
+                            'formatting' => 'html',
+                            'maxlength' => '',
+                        ),
+                        array (
+                            'key' => 'field_53dfbf88caff8',
+                            'label' => 'Descrição',
+                            'name' => 'missao_repeater_descricao',
+                            'type' => 'textarea',
+                            'column_width' => '',
+                            'default_value' => '',
+                            'placeholder' => '',
+                            'maxlength' => '',
+                            'rows' => '',
+                            'formatting' => 'br',
+                        ),
+                        array (
+                            'key' => 'field_53dfbf03caff6',
+                            'label' => 'Icone',
+                            'name' => 'missao_repeater_icone',
+                            'type' => 'image',
+                            'column_width' => '',
+                            'save_format' => 'id',
+                            'preview_size' => 'thumbnail',
+                            'library' => 'all',
+                        ),
+                    ),
+                    'row_min' => 0,
+                    'row_limit' => '',
+                    'layout' => 'table',
+                    'button_label' => 'Adicionar mais um campo',
+                ),
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'onepage',
+                        'order_no' => 0,
+                        'group_no' => 0,
+                    ),
+                    array(
+                        'param' => 'post',
+                        'operator' => '==',
+                        'value' => $_missao->ID,
+                        'order_no' => 1,
+                        'group_no' => 0,
+                    ),
+                ),
+            ),
+            'options' => array (
+                'position' => 'normal',
+                'layout' => 'default',
+                'hide_on_screen' => array (
+                ),
+            ),
+            'menu_order' => 0,
+        ));
+    }
 }
 

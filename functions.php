@@ -64,6 +64,15 @@ if (!function_exists('junto_theme_setup')) :
             );
             wp_insert_post($defaults);
 
+            $defaults = array(
+                'post_status' => 'publish',
+                'post_name' => 'missao', // The name (slug) for your post
+                'post_title' => 'Missão', // The title of your post.
+                'post_type' => 'onepage',
+                'post_parent' => 0,
+            );
+            wp_insert_post($defaults);
+
             $page = get_page_by_path('cases', OBJECT, 'onepage');
             add_option( 'cases', $page->ID, '', 'yes' );
 
@@ -78,6 +87,9 @@ if (!function_exists('junto_theme_setup')) :
 
             $page = get_page_by_path('servicos', OBJECT, 'onepage');
             add_option( 'servicos', $page->ID, '', 'yes' );
+
+            $page = get_page_by_path('missao', OBJECT, 'onepage');
+            add_option( 'missao', $page->ID, '', 'yes' );
 
         }
     }
