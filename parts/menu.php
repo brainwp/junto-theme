@@ -6,7 +6,7 @@
  */
 ?>
 
-<span class="top" href="">Junto</span>
+<span class="top" href=""></span>
 
 <?php
 $mt = get_option('metodologia');
