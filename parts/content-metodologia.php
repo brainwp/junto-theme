@@ -9,6 +9,7 @@
 <section class="col-md-12 metodologia">
 	<header class="entry-header">
 		<h2>Como Fazemos?</h2>
+		<span class="sub-title">[ Metodologia ]</span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -32,29 +33,46 @@
 				<span class="number">1</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_primeira_metodologia', $m->ID ) ?>
-				</span> 
-				<?php echo $m_each['0']; ?>
+				</span>
+				<span class="desc">
+					<?php echo $m_each['0']; ?>
+				</span>
 			</div><!-- .each -->
+
+			<div class="linha-vertical"></div>
+
 			<div class="each">
 				<span class="number">2</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_segunda_metodologia', $m->ID ) ?>
-				</span> 
-				<?php echo $m_each['1']; ?>
+				</span>
+				<span class="desc">
+					<?php echo $m_each['1']; ?>
+				</span>
 			</div><!-- .each -->
+
+			<div class="linha-vertical"></div>
+
 			<div class="each">
 				<span class="number">3</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_terceira_metodologia', $m->ID ) ?>
-				</span> 
-				<?php echo $m_each['2']; ?>
+				</span>
+				<span class="desc">
+					<?php echo $m_each['2']; ?>
+				</span>
 			</div><!-- .each -->
+
+			<div class="linha-vertical"></div>
+
 			<div class="each">
 				<span class="number">4</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_quarta_metodologia', $m->ID ) ?>
-				</span> 
-				<?php echo $m_each['3']; ?>
+				</span>
+				<span class="desc">
+					<?php echo $m_each['3']; ?>
+				</span>
 			</div><!-- .each -->
 		
 		</div><!-- .metodos -->
