@@ -51,6 +51,6 @@
 		<?php edit_post_link( __( 'Edite a seção Metodologia', 'junto-theme' ), '<span class="edit-link">', '</span>', $m ); ?>
 	</footer><!-- .entry-footer -->
 </section><!-- .metodologia -->
-<div class="bottom-bg metodologia"></div>
+<div class="bottom-bg missao"></div>
 
 <?php unset( $m ); ?>

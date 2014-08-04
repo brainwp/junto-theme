@@ -1002,8 +1002,13 @@ section.cases .btn-all-cases a:hover {
 
 /* Missão */
 
+section.missao {
+	background: url('img/bg-claro.jpg');
+	margin-top: -27px;
+}
+
 section.missao .entry-header {
-	padding: 15px 0 0 0;
+	padding: 40px 0 20px 0;
 }
 
 section.missao .entry-header h2 {
@@ -1051,6 +1056,16 @@ section.missao .entry-content .each .desc .title {
 	display: block;
 	font-size: 2.5em;
 	font-weight: 300;
+}
+
+.bottom-bg.missao {
+	background: url('img/seta-clara.png') center top no-repeat transparent;
+	height: 27px;
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	z-index: 99999;
 }
 
 
