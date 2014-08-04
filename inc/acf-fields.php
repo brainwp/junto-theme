@@ -452,6 +452,23 @@ function _register_field_groups()
             'id' => 'acf_missao',
             'title' => 'Missão',
             'fields' => array (
+                array(
+                'key' => 'field_53dfbedacaff8',
+                'label' => 'Exibir seção Missão?',
+                'name' => 'op_secao_missao',
+                'type' => 'true_false',
+                'instructions' => 'Marque essa opção para exibir a seção Missão na Home do site',
+                'message' => '',
+                'default_value' => 1,
+            ),
+            array(
+                'key' => 'field_53dfbedacaff9',
+                'label' => 'Exibir Missão no menu?',
+                'name' => 'op_menu_missao',
+                'type' => 'true_false',
+                'message' => '',
+                'default_value' => 0,
+            ),
                 array (
                     'key' => 'field_53dfbedacaff5',
                     'label' => 'Missão',

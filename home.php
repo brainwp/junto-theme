@@ -22,6 +22,12 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php
+			$mi = get_option('missao');
+			if ( get_field('op_secao_missao', $mi) ) : ?>
+				<?php get_template_part( 'parts/content', 'missao' ); ?>
+			<?php endif; ?>
+
+			<?php
 			$cases = get_page_by_title('Cases', 'OBJECT', 'onepage');
 			if ( get_field('op_exibir_cases', $cases->ID) ) : ?>
 				<?php get_template_part( 'parts/content', 'cases' ); ?>

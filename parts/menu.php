@@ -15,6 +15,12 @@ if ( get_field('op_exibir_metodologia', $mt) ) : ?>
 <?php endif; ?>
 
 <?php
+$mi = get_option('missao');
+if ( get_field('op_menu_missao', $mi) ) : ?>
+	<span class="menu-missao" href="">Missão</span>
+<?php endif; ?>
+
+<?php
 $cs = get_option('cases');
 if ( get_field('op_exibir_menu_cases', $cs) ) : ?>
 	<span class="menu-cases" href="">Cases</span>
