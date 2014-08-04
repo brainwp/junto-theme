@@ -1074,6 +1074,7 @@ section.missao .entry-content .each .desc .title {
 --------------------------------------------------------------*/
 .site-footer {
 	background: #008175;
+	padding: 20px 0;
 }
 
 .site-footer a {
