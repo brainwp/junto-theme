@@ -41,10 +41,11 @@ and Blueprint http://www.blueprintcss.org/
 	10.2 - Asides
 	10.3 - Comments
 11.0 - One Page Home
-12.0 - Infinite scroll
-13.0 - Media
-	13.1 - Captions
-	13.2 - Galleries
+12.0 - Footer
+13.0 - Infinite scroll
+14.0 - Media
+	14.1 - Captions
+	14.2 - Galleries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -241,6 +242,22 @@ table {
 }
 th {
 	font-weight: bold;
+}
+
+.barra-esquerda, .barra-direita {
+	background: url('img/barras.png');
+	position: absolute; /* A div envolta dessa deve estar com position: relative */
+	width: 17px;
+	height: 85px;
+}
+
+.barra-esquerda {
+	left: 0;
+	background-position: left;
+}
+.barra-direita{
+	right: 0;
+	background-position: right;
 }
 
 /*--------------------------------------------------------------
@@ -945,7 +962,108 @@ section.cases .btn-all-cases a {
 }
 
 /*--------------------------------------------------------------
-12.0 Infinite scroll
+12.0 Footer
+--------------------------------------------------------------*/
+.site-footer {
+	background: #008175;
+}
+
+.site-footer a {
+	color: #e0efeb;
+}
+
+.site-footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.site-footer .entry-content {
+	color: #FFF;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.site-footer .entry-content .col-sm-4 {
+	padding: 20px;
+}
+
+.site-footer .mini-logo {
+	background: url('img/mini-logo-junto.png') no-repeat;
+	display: block;
+	height: 45px;
+	margin: 0 0 15px 0;
+	width: 120px;
+}
+
+.site-footer .endereco {
+	display: block;
+}
+
+.site-footer .contatos {
+	display: block;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+.site-footer .contatos .line {
+	width: 100%;
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+.site-footer .contatos span {
+	float: left;
+	margin-right: 5px;
+}
+
+.site-footer .contatos .phone {
+	background: url('img/icons.png') 0 2px no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.site-footer .contatos .email {
+	background: url('img/icons.png') 0 -16px no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.site-footer .btn-contato {
+	display: block;
+	height: 85px;
+	position: relative;
+	text-align: center;
+	font-weight: 300;
+	max-width: 65%;
+	margin: 20px 0 10px 0;
+}
+
+.site-footer .btn-contato span {
+	text-transform: uppercase;
+	font-size: 2.2em;
+	font-style: italic;
+	max-width: 70%;
+	display: inline-block;
+	line-height: 1em;
+	margin-top: 10px;
+}
+
+.site-footer .entry-content .blog h2 {
+	display: block;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.site-footer .entry-content .blog a.title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	width: 100%;
+	display: block;
+}
+
+/*--------------------------------------------------------------
+13.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
@@ -958,7 +1076,7 @@ section.cases .btn-all-cases a {
 }
 
 /*--------------------------------------------------------------
-13.0 Media
+14.0 Media
 --------------------------------------------------------------*/
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
@@ -976,7 +1094,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-13.1 Captions
+14.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
@@ -994,7 +1112,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-13.2 Galleries
+14.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
 	margin-bottom: 1.5em;

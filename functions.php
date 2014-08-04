@@ -268,3 +268,31 @@ function hide_add_new_onepage()
     unset($submenu['edit.php?post_type=onepage'][10]);
 }
 add_action('admin_menu', 'hide_add_new_onepage');
+
+
+/**
+ * Função para criar resumos
+ */
+function resumo( $content, $custom_max = '', $sep = '') {
+    global $query;
+
+    if ( empty($content) ) {
+        return '';
+    } else {
+        if( empty($sep) ){
+            $sep = ' [...]';
+        }
+        if ( empty( $custom_max ) ) {
+            $max = 100;
+        } else {
+            $max = $custom_max;
+        }
+
+        if ( strlen( $content ) > $max ) {
+            while ( substr( $content, $max, 1 ) <> ' ' && ( $max < strlen( $content ) ) ) {
+                $max ++;
+            };
+        };
+        return substr( $content, 0, $max ) . $sep;
+    }
+}
