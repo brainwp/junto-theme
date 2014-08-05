@@ -558,4 +558,118 @@ function _register_field_groups()
             'menu_order' => 0,
         ));
     }
+    //servicos
+    $_servicos = get_page_by_path('servicos', OBJECT, 'onepage');
+    if(function_exists("register_field_group"))
+    {
+        register_field_group(array (
+            'id' => 'acf_servicos',
+            'title' => 'Serviços',
+            'fields' => array (
+                array (
+                    'key' => 'field_53e0d98352156',
+                    'label' => 'Exibir seção Serviços?',
+                    'name' => 'op_exibir_servicos',
+                    'type' => 'true_false',
+                    'instructions' => 'Marque essa opção para exibir a seção Serviços na Home do site',
+                    'message' => '',
+                    'default_value' => 1,
+                ),
+                array (
+                    'key' => 'field_53e0d9e852157',
+                    'label' => 'Exibir Serviços no menu?',
+                    'name' => 'servicos_menu',
+                    'type' => 'true_false',
+                    'message' => '',
+                    'default_value' => 0,
+                ),
+                array (
+                    'key' => 'field_53e0db3952158',
+                    'label' => 'Serviços',
+                    'name' => 'servicos_repeater',
+                    'type' => 'repeater',
+                    'sub_fields' => array (
+                        array (
+                            'key' => 'field_53e0db8352159',
+                            'label' => 'Título',
+                            'name' => 'servicos_repeater_titulo',
+                            'type' => 'text',
+                            'column_width' => '',
+                            'default_value' => '',
+                            'placeholder' => '',
+                            'prepend' => '',
+                            'append' => '',
+                            'formatting' => 'html',
+                            'maxlength' => '',
+                        ),
+                        array (
+                            'key' => 'field_53e0dba35215a',
+                            'label' => 'Descrição',
+                            'name' => 'servicos_repeater_descricao',
+                            'type' => 'textarea',
+                            'column_width' => '',
+                            'default_value' => '',
+                            'placeholder' => '',
+                            'maxlength' => '',
+                            'rows' => '',
+                            'formatting' => 'br',
+                        ),
+                        array (
+                            'key' => 'field_53e0dbd25215b',
+                            'label' => 'Icone',
+                            'name' => 'servicos_repeater_icone',
+                            'type' => 'image',
+                            'column_width' => '',
+                            'save_format' => 'id',
+                            'preview_size' => 'thumbnail',
+                            'library' => 'all',
+                        ),
+                    ),
+                    'row_min' => 0,
+                    'row_limit' => '',
+                    'layout' => 'table',
+                    'button_label' => 'Adicionar mais um campo',
+                ),
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'onepage',
+                        'order_no' => 0,
+                        'group_no' => 0,
+                    ),
+                    array(
+                        'param' => 'post',
+                        'operator' => '==',
+                        'value' => $_servicos->ID,
+                        'order_no' => 1,
+                        'group_no' => 0,
+                    ),
+                ),
+            ),
+            'options' => array (
+                'position' => 'normal',
+                'layout' => 'default',
+                'hide_on_screen' => array (
+                    0 => 'permalink',
+                    1 => 'the_content',
+                    2 => 'excerpt',
+                    3 => 'custom_fields',
+                    4 => 'discussion',
+                    5 => 'comments',
+                    6 => 'revisions',
+                    7 => 'slug',
+                    8 => 'author',
+                    9 => 'format',
+                    10 => 'featured_image',
+                    11 => 'categories',
+                    12 => 'tags',
+                    13 => 'send-trackbacks',
+                ),
+            ),
+            'menu_order' => 0,
+        ));
+    }
 }
