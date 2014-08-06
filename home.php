@@ -22,6 +22,12 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php
+			$se = get_option('servicos');
+			if ( get_field('op_exibir_servicos', $se) ) : ?>
+				<?php get_template_part( 'parts/content', 'servicos' ); ?>
+			<?php endif; ?>
+
+			<?php
 			$mi = get_option('missao');
 			if ( get_field('op_secao_missao', $mi) ) : ?>
 				<?php get_template_part( 'parts/content', 'missao' ); ?>
