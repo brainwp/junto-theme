@@ -61,7 +61,7 @@
             next: '#next-case',
             responsive: true,
             width: '100%',
-            height: 350,
+            height: 330,
             scroll: {
                 items: 1,
                 pauseOnHover: true

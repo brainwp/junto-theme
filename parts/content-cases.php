@@ -8,8 +8,8 @@
 <div id="cases" class="top-bg cases"></div>
 <section class="col-md-12 cases" id="cases_section">
 	<header class="entry-header">
-		<h2>Cases</h2>
-		<span class="sub-title">[ Conheça alguns trabalhos realizados ]</span>
+		<h2>Conheça alguns trabalhos realizados</h2>
+		<span class="sub-title">[ Cases ]</span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -88,6 +88,8 @@
 		</div><!-- .content-cases -->
 
 	</div><!-- .entry-content -->
+
+	<div class="hr"></div>
 
 	<footer class="entry-footer">
 			<div class="col-md-3">

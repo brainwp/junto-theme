@@ -636,7 +636,7 @@ a:active {
 --------------------------------------------------------------*/
 .container {
 	width: 94% !important;
-	max-width: 1600px;
+	max-width: 1280px;
 	margin: 0 auto;
 	background: #F1F1F1;
 	padding: 0 !important;
@@ -687,6 +687,25 @@ a:active {
 /*--------------------------------------------------------------
 11.0 - One Page Home
 --------------------------------------------------------------*/
+
+/* Geral */
+section .entry-header h2 {
+	font-size: 5.5em;
+	font-weight: 300;
+	text-align: center;
+}
+
+section .entry-header .sub-title {
+	display: block;
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+/**/
+
 .header {
 	width: 100%;
 	height: 400px;
@@ -712,40 +731,33 @@ section.metodologia .entry-header {
 
 section.metodologia .entry-header h2 {
 	color: #e0efeb;
-	font-style: italic;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 section.metodologia .entry-header .sub-title {
-	color: #d7ece7; /* Verde Claro */
-	display: block;
-	font-size: 1em;
-	text-align: center;
+	color: #84d2bc;
 }
 
 section.metodologia .entry-content {
 	margin-top: 0;
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: auto;
 }
 
 section.metodologia .entry-content .each {
 	float: left;
 	text-align: center;
-	width: 24.2%;
+	width: 22.5%;
 	padding: 20px;
 }
 
 section.metodologia .linha-vertical {
- 	background-color: #fff;
+	background: url("img/seta-metodologia.png") no-repeat scroll -10px center;
     display: block;
     float: left;
-    height: 260px;
-    margin: 100px 5px;
+    height: 400px;
+    margin: 100px 0;
     overflow: hidden;
-    width: 1px;
+    width: 35px;
 }
 
 section.metodologia .entry-content .each:first-child {
@@ -769,7 +781,7 @@ section.metodologia .entry-content .each .number {
 
 section.metodologia .entry-content .each .title {
 	width: 100%;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: 300;
 	text-align: center;
 	display: block;
@@ -778,6 +790,8 @@ section.metodologia .entry-content .each .title {
 
 section.metodologia .entry-content .each .desc {
 	color: #d7ece7; /* Verde Claro */
+    font-size: 1.25em;
+    line-height: 1.35em;
 }
 
 section.metodologia .entry-footer {
@@ -808,18 +822,10 @@ section.clientes {
 }
 
 section.clientes .entry-header h2 {
-	font-style: italic;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 section.clientes .entry-header .sub-title {
 	color: #888;
-	display: block;
-	font-size: 1em;
-	text-align: center;
-	margin-bottom: 15px;
 }
 
 section.clientes .entry-content {
@@ -863,17 +869,10 @@ section.cases {
 
 section.cases .entry-header h2 {
 	color: #e0efeb;
-	font-style: italic;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 section.cases .entry-header .sub-title {
 	color: #d7ece7; /* Verde Claro */
-	display: block;
-	font-size: 1em;
-	text-align: center;
 }
 
 section.cases .content-cases {
@@ -881,7 +880,7 @@ section.cases .content-cases {
 	margin: 0 auto;
 	/*background-color: #333;*/
 	overflow: hidden;
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	min-height: 300px;
 	position: relative;
 }
@@ -917,11 +916,17 @@ section.cases .each-case .img img {
 section.cases .each-case .desc {
 	color: #e0efeb;
 	text-align: center;
-	font-size: 0.9em;
+	font-size: 1.3em;
 	position: absolute;
-	bottom: 0;
+	bottom: -20px;
 	width: 90%;
 	display: block;
+}
+
+section.cases .hr {
+    border-bottom: 2px dashed #555;
+	margin: 0 auto 50px auto;
+    width: 74%;
 }
 
 /* Setas do Slider Cases */
@@ -954,32 +959,32 @@ section.cases .content-cases .next-slider:hover {
 }
 
 section.cases .entry-footer {
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
 }
 
 section.cases .entry-footer > div {
 	margin: 0 4% 25px;
 	padding: 0;
+	text-align: center;
 }
 
 section.cases .entry-footer .icon {
-	float: left;
+	display: inline-block;
+	margin: 0 auto;
 	max-width: 90px;
 }
 
 section.cases .entry-footer .description {
-	color: #8b8b8b;
-	float: left;
-	font-size: 0.9em;
-	margin-left: 10px;
-	max-width: 170px;
-	padding-top: 20px;
+	color: #aaa;
+	font-size: 1.3em;
+	margin: 0 auto;
+	padding-top: 10px;
 }
 
 section.cases .btn-all-cases {
 	max-width: 70%;
-	margin: 0 auto;
+	margin: 26px auto 0 auto;
 	color: #e0efeb;
 	font-size: 2em;
 	font-style: italic;
@@ -992,8 +997,10 @@ section.cases .btn-all-cases {
 
 section.cases .btn-all-cases a {
 	color: #e0efeb;
-	max-width: 70%;
-	display: inline-block;
+    display: inline-block;
+    line-height: 1em;
+    margin-top: 13px;
+    max-width: 70%;
 }
 
 section.cases .btn-all-cases a:hover {
@@ -1013,16 +1020,9 @@ section.missao .entry-header {
 }
 
 section.missao .entry-header h2 {
-	font-style: italic;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 section.missao .entry-header .sub-title {
-	display: block;
-	font-size: 1em;
-	text-align: center;
 }
 
 section.missao .entry-content {
@@ -1070,7 +1070,7 @@ section.missao .entry-content .each .desc .title {
 
 /* Serviços */
 section.servicos {
-	background: url('img/bg-claro.jpg');
+	background: url('img/bg-claro.jpg') fixed;
 	margin-top: -27px;
 }
 
@@ -1079,17 +1079,10 @@ section.servicos .entry-header {
 }
 
 section.servicos .entry-header h2 {
-	font-style: italic;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 section.servicos .entry-header .sub-title {
 	color: #888;
-	display: block;
-	font-size: 1em;
-	text-align: center;
 }
 
 section.servicos .entry-content {
@@ -1100,7 +1093,9 @@ section.servicos .entry-content {
 }
 
 section.servicos .entry-content .each {
+	padding: 10px;
 	margin-bottom: 40px;
+	height: 410px;
 	overflow: hidden;
 }
 
@@ -1119,12 +1114,17 @@ section.servicos .entry-content .each .desc {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 1.25em;
+    line-height: 1.35em;
 }
 
 section.servicos .entry-content .each .desc .title {
+	color: #008175;
 	display: block;
 	font-size: 2.5em;
-	font-weight: 300;
+	font-weight: 400;
+	line-height: 1em;
+	margin-bottom: 15px;
 }
 
 
