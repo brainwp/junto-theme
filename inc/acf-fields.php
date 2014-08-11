@@ -384,10 +384,6 @@ function _register_field_groups()
         'menu_order' => 0,
     ));
 
-
-
-
-
     require get_template_directory() . '/inc/odin-metabox.php';
     $clientes_img = new Odin_Metabox(
         'clientes_img', // Slug/ID do Metabox (obrigatório)
