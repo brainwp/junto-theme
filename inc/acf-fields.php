@@ -441,14 +441,12 @@ function _register_field_groups()
         ));
     }
     
-    global $post;
     $cases_img = new Odin_Metabox(
         'cases_img', // Slug/ID do Metabox (obrigatório)
         'Cases Imagens', // Nome do Metabox  (obrigatório)
         'portfolio', // Slug do Post Type, sendo possível enviar apenas um valor ou um array com vários (opcional)
         'advanced', // Contexto (opções: normal, advanced, ou side) (opcional)
-        'high', // Prioridade (opções: high, core, default ou low) (opcional)
-        (string)$post->ID
+        'high' // Prioridade (opções: high, core, default ou low) (opcional)
     );
     $cases_img->set_fields(
         array(
@@ -461,8 +459,6 @@ function _register_field_groups()
             )
         )
     );
-
-
 
 
     //missao
