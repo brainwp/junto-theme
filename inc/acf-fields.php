@@ -436,14 +436,39 @@ function _register_field_groups()
                 ),
             ),
             'options' => array (
-                'position' => 'normal',
-                'layout' => 'no_box',
+                'position' => 'side',
+                'layout' => 'default',
                 'hide_on_screen' => array (
                 ),
             ),
             'menu_order' => 0,
         ));
     }
+    
+    global $post;
+    $cases_img = new Odin_Metabox(
+        'cases_img', // Slug/ID do Metabox (obrigatório)
+        'Cases Imagens', // Nome do Metabox  (obrigatório)
+        'portfolio', // Slug do Post Type, sendo possível enviar apenas um valor ou um array com vários (opcional)
+        'advanced', // Contexto (opções: normal, advanced, ou side) (opcional)
+        'high', // Prioridade (opções: high, core, default ou low) (opcional)
+        (string)$post->ID
+    );
+    $cases_img->set_fields(
+        array(
+            array(
+                'id' => 'cases_img_box', // Obrigatório
+                'label' => 'Selecione ou faça upload das imagens desse case', // Obrigatório
+                'type' => 'image_plupload', // Obrigatório
+                'default' => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                'description' => '', // Opcional
+            )
+        )
+    );
+
+
+
+
     //missao
     $_missao = get_page_by_path('missao', OBJECT, 'onepage');
     if(function_exists("register_field_group"))
