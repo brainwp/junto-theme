@@ -1020,6 +1020,8 @@ section.missao .entry-header {
 }
 
 section.missao .entry-header h2 {
+	line-height: 1em;
+	margin-bottom: 10px;
 }
 
 section.missao .entry-header .sub-title {
@@ -1033,23 +1035,22 @@ section.missao .entry-content {
 }
 
 section.missao .entry-content .each {
-	margin-bottom: 30px;
-	width: 100%;
+	margin: 0 auto 25px auto;
 	overflow: hidden;
-}
-
-section.missao .entry-content .each .icon {
-	float: left;
-	width: 80px;
-	height: 80px;
-	margin-right: 25px;
+	padding: 15px 25px 25px 25px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #84d2bc;
+	text-align: center;
+	width: 90%;
 }
 
 section.missao .entry-content .each .desc {
-	width: 80%;
 	height: auto;
+	margin: 0 auto;
 	overflow: hidden;
-	float: left;
+	width: 90%;
 }
 
 section.missao .entry-content .each .desc .title {
