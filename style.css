@@ -765,15 +765,16 @@ section.metodologia .entry-content .each:first-child {
 }
 
 section.metodologia .entry-content .each .number {
-	background-color: #FFF;
-	display: inline-block;
-	font-size: 3em;
-	color: #008175;
-	margin: 30px 30% 15px;
-	height: 65px;
-	width: 65px;
-	vertical-align:middle;
-	text-align: center;
+		background-color: #fff;
+    color: #008175;
+    display: inline-block;
+    font-size: 3em;
+    height: 65px;
+    margin: 30px 30% 15px;
+    padding: 19px;
+    text-align: center;
+    vertical-align: middle;
+    width: 65px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -1057,6 +1058,7 @@ section.missao .entry-content .each .desc .title {
 	display: block;
 	font-size: 2.5em;
 	font-weight: 300;
+	margin: 15px auto;
 }
 
 .bottom-bg.missao {
