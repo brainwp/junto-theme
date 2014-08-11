@@ -6,7 +6,7 @@
  */
 ?>
 <div id="missao"></div>
-<section class="col-md-12 missao">
+<section class="col-md-12 missao" id="missao_section">
 	<header class="entry-header">
 		<h2>O que nos move?</h2>
 		<span class="sub-title">[ Missão ]</span>

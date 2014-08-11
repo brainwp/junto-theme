@@ -6,7 +6,7 @@
  */
 ?>
 <div id="servicos"></div>
-<section class="col-md-12 servicos">
+<section class="col-md-12 servicos" id="servicos_section">
 	<header class="entry-header">
 		<h2>O que fazemos?</h2>
 		<span class="sub-title">[ Serviços ]</span>
