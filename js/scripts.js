@@ -45,17 +45,15 @@
         $(this).addClass('active');
     });
 
-	$('.top').on('click', function () {
-		$('span').removeClass('active');
+    $('.top_menu.top').css('display','none');
+	
+    $('.top_menu.top').on('click', function () {
 		$('html, body').animate({
 		    scrollTop: $("#top").offset().top-40
 		}, 2000);
-		$('.top').removeClass('active');
-		$(this).addClass('active');
 	});
 
     $(document).ready(function(e){
-        $('.top_menu.top').css('display','none');
         $('.slider_cases').carouFredSel({
             prev: '#prev-case',
             next: '#next-case',
@@ -77,23 +75,24 @@
 
         var active_link_menu = function(){
             var cutoff = $(window).scrollTop();
-            var cutoffRange = cutoff + 200;
+            var cutoffRange = cutoff + 400;
 
             var curSec = $.find('.current');
             var curID = $(curSec).attr('id');
             var curNav = $.find('a[name='+curID+']');
-            $(curNav).addClass('active');
+            $(curNav).not('.top_menu.top').addClass('active');
 
             $('.top_menu').each(function(){
                 var element = $(this).attr('data-element');
                 if ($(element).offset().top > cutoff && $(element).offset().top < cutoffRange) {
                     $('.top_menu.active').removeClass('active')
-                    $(this).addClass('active');
+                    $(this).not('.top_menu.top').addClass('active');
                     return false; //da break no each
                 }
             });
             if (cutoff > $('#junto_section').offset().top) {
-                $('.top_menu.top').show('slow');
+                $('.top_menu.top').css('display','block');
+
             }
             else{
                 $('.top_menu.top').css('display','none');

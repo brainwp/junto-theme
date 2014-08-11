@@ -419,10 +419,10 @@ a:active {
 .home-menu .top {
 	background: url('img/logos/mini-logo-junto-menu.png') center center no-repeat;
 	height: 37px;
-	padding: 8px 25px 17px;
+	padding: 26px 25px 17px;
 	width: 90px;
 	cursor: pointer;
-	transition: 400ms ease all;
+	transition: 300ms ease all;
 }
 
 .home-menu .top.active, .home-menu .top:hover {

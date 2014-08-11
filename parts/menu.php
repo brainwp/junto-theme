@@ -17,13 +17,13 @@ if ( get_field('op_exibir_metodologia', $mt) ) : ?>
 <?php
 $se = get_option('servicos');
 if ( get_field('servicos_menu', $se) ) : ?>
-	<span class="menu-servicos" data-element="#servicos_section">Serviços</span>
+	<span class="top_menu menu-servicos" data-element="#servicos_section">Serviços</span>
 <?php endif; ?>
 
 <?php
 $mi = get_option('missao');
 if ( get_field('op_menu_missao', $mi) ) : ?>
-	<span class="menu-missao" data-element="#missao_section">Missão</span>
+	<span class="top_menu menu-missao" data-element="#missao_section">Missão</span>
 <?php endif; ?>
 
 <?php
