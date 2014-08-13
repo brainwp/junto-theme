@@ -692,6 +692,7 @@ a:active {
 section .entry-header h2 {
 	font-size: 5.5em;
 	font-weight: 300;
+	padding: 20px 0;
 	text-align: center;
 }
 
@@ -708,14 +709,14 @@ section .entry-header .sub-title {
 
 .header {
 	width: 100%;
-	height: 400px;
+	height: 600px;
 	background: url('img/bg-preto.png') center transparent;
 }
 
 .header .logo {
 	width: 320px;
 	height: 120px;
-	margin: 120px auto 0;
+	margin: 250px auto 0;
 }
 
 /* Metodologia */
@@ -786,7 +787,7 @@ section.metodologia .entry-content .each .title {
 	font-weight: 300;
 	text-align: center;
 	display: block;
-	margin: 10px auto 7px;
+	margin: 10px auto 20px;
 }
 
 section.metodologia .entry-content .each .desc {
@@ -1038,7 +1039,7 @@ section.missao .entry-content {
 section.missao .entry-content .each {
 	margin: 0 auto 25px auto;
 	overflow: hidden;
-	padding: 15px 25px 25px 25px;
+	padding: 15px 25px 30px 25px;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -1048,6 +1049,7 @@ section.missao .entry-content .each {
 }
 
 section.missao .entry-content .each .desc {
+	font-size: 1.25em;
 	height: auto;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1058,7 +1060,7 @@ section.missao .entry-content .each .desc .title {
 	display: block;
 	font-size: 2.5em;
 	font-weight: 300;
-	margin: 15px auto;
+	margin: 20px auto;
 }
 
 .bottom-bg.missao {
@@ -1075,6 +1077,7 @@ section.missao .entry-content .each .desc .title {
 section.servicos {
 	background: url('img/bg-claro.jpg') fixed;
 	margin-top: -27px;
+	margin-bottom: 20px;
 }
 
 section.servicos .entry-header {
@@ -1125,7 +1128,7 @@ section.servicos .entry-content .each .desc .title {
 	color: #008175;
 	display: block;
 	font-size: 2.5em;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 15px;
 }
@@ -1216,11 +1219,12 @@ section.servicos .entry-content .each .desc .title {
 	max-width: 70%;
 	display: inline-block;
 	line-height: 1em;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .site-footer .entry-content .blog h2 {
 	display: block;
+	font-size: 3em;
 	font-weight: 300;
 	text-transform: uppercase;
 }

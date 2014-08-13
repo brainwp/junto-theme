@@ -3,8 +3,8 @@
 	$('.menu-clientes').on('click', function () {
 		$('span').removeClass('active');
 		$('html, body').animate({
-		    scrollTop: $("section.clientes").offset().top-40
-		}, 2000);
+		    scrollTop: $("section.clientes").offset().top-30
+		}, 1000);
 		$('.menu-clientes').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -12,8 +12,8 @@
 	$('.menu-metodologia').on('click', function () {
 		$('span').removeClass('active');
 		$('html, body').animate({
-		    scrollTop: $("section.metodologia").offset().top-60
-		}, 2000);
+		    scrollTop: $("section.metodologia").offset().top-30
+		}, 1000);
 		$('.menu-metodologia').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -21,8 +21,8 @@
 	$('.menu-cases').on('click', function () {
 		$('span').removeClass('active');
 		$('html, body').animate({
-		    scrollTop: $("section.cases").offset().top-40
-		}, 2000);
+		    scrollTop: $("section.cases").offset().top-30
+		}, 1000);
 		$('.menu-cases').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -30,8 +30,8 @@
     $('.menu-missao').on('click', function () {
         $('span').removeClass('active');
         $('html, body').animate({
-            scrollTop: $("section.missao").offset().top-60
-        }, 2000);
+            scrollTop: $("section.missao").offset().top-40
+        }, 1000);
         $('.menu-missao').removeClass('active');
         $(this).addClass('active');
     });
@@ -39,8 +39,8 @@
     $('.menu-servicos').on('click', function () {
         $('span').removeClass('active');
         $('html, body').animate({
-            scrollTop: $("section.servicos").offset().top-60
-        }, 2000);
+            scrollTop: $("section.servicos").offset().top-40
+        }, 1000);
         $('.menu-servicos').removeClass('active');
         $(this).addClass('active');
     });
@@ -49,8 +49,8 @@
 	
     $('.top_menu.top').on('click', function () {
 		$('html, body').animate({
-		    scrollTop: $("#top").offset().top-40
-		}, 2000);
+		    scrollTop: $("#top").offset().top-30
+		}, 1000);
 	});
 
     $(document).ready(function(e){
