@@ -226,6 +226,55 @@ function _register_field_groups()
         ),
         'menu_order' => 0,
     ));
+    if(function_exists("register_field_group"))
+    {
+        register_field_group(array (
+            'id' => 'acf_cases',
+            'title' => 'Cases',
+            'fields' => array (
+                array (
+                    'key' => 'field_53f397c7229cf',
+                    'label' => 'Logo',
+                    'name' => 'portfolio_logo',
+                    'type' => 'image',
+                    'save_format' => 'url',
+                    'preview_size' => 'medium',
+                    'library' => 'uploadedTo',
+                ),
+                array (
+                    'key' => 'field_53f3971a57cf3',
+                    'label' => 'Descrição Curta',
+                    'name' => 'portfolio_descricao_curta',
+                    'type' => 'textarea',
+                    'required' => 1,
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'maxlength' => 400,
+                    'rows' => '',
+                    'formatting' => 'br',
+                ),
+            ),
+            'location' => array (
+                array (
+                    array (
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'portfolio',
+                        'order_no' => 0,
+                        'group_no' => 0,
+                    ),
+                ),
+            ),
+            'options' => array (
+                'position' => 'acf_after_title',
+                'layout' => 'default',
+                'hide_on_screen' => array (
+                ),
+            ),
+            'menu_order' => 0,
+        ));
+    }
+
 
     /* Metodologia */
     $_metodologia = get_page_by_path('metodologia', OBJECT, 'onepage');
