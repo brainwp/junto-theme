@@ -8,7 +8,7 @@
 <div id="cases" class="top-bg cases"></div>
 <section class="col-md-12 cases" id="cases_section">
 	<header class="entry-header">
-		<h2>Conheça alguns trabalhos realizados</h2>
+		<h2>Alguns trabalhos realizados</h2>
 		<span class="sub-title">[ Cases ]</span>
 	</header><!-- .entry-header -->
 

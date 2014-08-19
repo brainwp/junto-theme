@@ -628,6 +628,15 @@ a:active {
 	display: none;
 }
 
+h1.widget-title {
+	display: block;
+	font-size: 2.5em;
+	font-style: italic;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -763,7 +772,7 @@ section.metodologia .entry-content .each {
 	float: left;
 	text-align: center;
 	width: 22.5%;
-	padding: 20px;
+	padding: 0 20px;
 }
 
 section.metodologia .linha-vertical {
@@ -781,8 +790,7 @@ section.metodologia .entry-content .each:first-child {
 }
 
 section.metodologia .entry-content .each .number {
-		background-color: #fff;
-    color: #008175;
+    color: #FFF;
     display: inline-block;
     font-size: 3em;
     height: 65px;
@@ -794,6 +802,50 @@ section.metodologia .entry-content .each .number {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+}
+
+.number.um {
+	background: #ffe36b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffe36b 0%, #ffc43d 50%, #fca400 51%, #ffa705 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe36b), color-stop(50%,#ffc43d), color-stop(51%,#fca400), color-stop(100%,#ffa705)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffe36b 0%,#ffc43d 50%,#fca400 51%,#ffa705 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffe36b 0%,#ffc43d 50%,#fca400 51%,#ffa705 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffe36b 0%,#ffc43d 50%,#fca400 51%,#ffa705 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffe36b 0%,#ffc43d 50%,#fca400 51%,#ffa705 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe36b', endColorstr='#ffa705',GradientType=0 ); /* IE6-9 */
+}
+
+.number.dois {
+	background: #f85032; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f85032), color-stop(50%,#f16f5c), color-stop(51%,#f6290c), color-stop(71%,#f02f17), color-stop(100%,#e73827)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+}
+
+.number.tres {
+	background: #9dd53a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+}
+
+.number.quatro {
+	background: #41e3f2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #41e3f2 0%, #59dff7 50%, #38bff4 51%, #22c0f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41e3f2), color-stop(50%,#59dff7), color-stop(51%,#38bff4), color-stop(100%,#22c0f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #41e3f2 0%,#59dff7 50%,#38bff4 51%,#22c0f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #41e3f2 0%,#59dff7 50%,#38bff4 51%,#22c0f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #41e3f2 0%,#59dff7 50%,#38bff4 51%,#22c0f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #41e3f2 0%,#59dff7 50%,#38bff4 51%,#22c0f9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41e3f2', endColorstr='#22c0f9',GradientType=0 ); /* IE6-8 */
 }
 
 section.metodologia .entry-content .each .title {
@@ -834,14 +886,15 @@ section.metodologia .entry-footer {
 
 section.clientes {
 	background: #FFF;
-	padding: 10px 0 50px;
+	padding: 10px 0 15px;
 }
 
 section.clientes .entry-header h2 {
+	color: #00675e;
 }
 
 section.clientes .entry-header .sub-title {
-	color: #888;
+	color: #4ebe9f;
 }
 
 section.clientes .entry-content {
@@ -884,11 +937,11 @@ section.cases {
 }
 
 section.cases .entry-header h2 {
-	color: #e0efeb;
+	color: #84d2bc;
 }
 
 section.cases .entry-header .sub-title {
-	color: #d7ece7; /* Verde Claro */
+	color: #008175;
 }
 
 section.cases .content-cases {
@@ -1033,7 +1086,13 @@ section.cases .btn-all-cases a:hover {
 }
 
 .reveal-modal.open .description {
-	padding-left: 20px;
+	padding-left: 30px;
+}
+
+.reveal-modal.open .description span {
+	font-size: 1.4em;
+	font-weight: 300;
+	font-style: italic;
 }
 
 .reveal-modal.open .description h1 {
@@ -1069,6 +1128,7 @@ section.missao .entry-header {
 section.missao .entry-header h2 {
 	line-height: 1em;
 	margin-bottom: 10px;
+	color: #FFF;
 }
 
 section.missao .entry-header .sub-title {
@@ -1130,10 +1190,11 @@ section.servicos .entry-header {
 }
 
 section.servicos .entry-header h2 {
+	color: #00675e;
 }
 
 section.servicos .entry-header .sub-title {
-	color: #888;
+	color: #4ebe9f;
 }
 
 section.servicos .entry-content {
@@ -1145,7 +1206,7 @@ section.servicos .entry-content {
 
 section.servicos .entry-content .each {
 	padding: 10px;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 	height: 410px;
 	overflow: hidden;
 }
@@ -1159,13 +1220,19 @@ section.servicos .entry-content .each .icon {
 }
 
 section.servicos .entry-content .each .desc {
+	color: #00675e;
 	width: 90%;
 	height: auto;
 	overflow: hidden;
 	display: block;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
     line-height: 1.35em;
+}
+
+section.servicos .entry-content .each .desc .content {
+	border-left: 1px solid #4ebe9f;
+	padding: 5px 0 5px 15px;
 }
 
 section.servicos .entry-content .each .desc .title {
@@ -1175,6 +1242,7 @@ section.servicos .entry-content .each .desc .title {
 	font-weight: 300;
 	line-height: 1em;
 	margin-bottom: 15px;
+	text-align: center;
 }
 
 
@@ -1268,18 +1336,24 @@ section.servicos .entry-content .each .desc .title {
 
 .site-footer .entry-content .blog h2 {
 	display: block;
-	font-size: 3em;
+	font-size: 2.5em;
+	font-style: italic;
 	font-weight: 300;
 	text-transform: uppercase;
 }
 
 .site-footer .entry-content .blog a.title {
 	font-weight: bold;
-	font-size: 1.2em;
-	margin-bottom: 5px;
+	font-size: 1.3em;
+	margin: 10px 0;
 	width: 100%;
 	display: block;
 }
+
+.site-footer .entry-content .blog .mais {
+	font-style: italic;
+}
+
 
 /*--------------------------------------------------------------
 13.0 Infinite scroll

@@ -39,7 +39,7 @@
 							foreach( $last_posts as $last ){
 								echo '<a class="title" href="' . get_permalink($last["ID"]) . '" title="Veja '.esc_attr($last["post_title"]).'" >' .   $last["post_title"].'</a>';
 								echo resumo( $last["post_content"], 500 );
-								echo '<br><a href="' . get_permalink($last["ID"]) . '" title="Look '.esc_attr($last["post_title"]).'" >Leia mais >></a>';
+								echo '<br><a class="mais" href="' . get_permalink($last["ID"]) . '" title="Look '.esc_attr($last["post_title"]).'" >Leia mais >></a>';
 							}
 						?>
 					</div>
