@@ -44,6 +44,11 @@
 						?>
 					</div>
 					<div class="col-sm-4">
+						<?php if ( is_active_sidebar( 'newsletter_widget_area' ) ) : ?>
+							<div id="newsletter_widget_area" class="newsletter_widget_area widget-area" role="complementary">
+								<?php dynamic_sidebar( 'newsletter_widget_area' ); ?>
+							</div><!-- #newsletter_widget_area -->
+						<?php endif; ?>
 					</div>
 				</div><!-- entry-content -->
 
