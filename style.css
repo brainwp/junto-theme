@@ -705,7 +705,7 @@ a:active {
 
 /* Geral */
 section .entry-header h2 {
-	font-size: 5.5em;
+	font-size: 4.7em;
 	font-weight: 300;
 	padding: 20px 0;
 	text-align: center;
@@ -713,7 +713,7 @@ section .entry-header h2 {
 
 section .entry-header .sub-title {
 	display: block;
-	font-size: 2em;
+	font-size: 1.7em;
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -807,7 +807,6 @@ section.metodologia .entry-content .each .title {
 
 section.metodologia .entry-content .each .desc {
 	color: #d7ece7; /* Verde Claro */
-    font-size: 1.25em;
     line-height: 1.35em;
 }
 
@@ -1166,7 +1165,6 @@ section.servicos .entry-content .each .desc {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	font-size: 1.25em;
     line-height: 1.35em;
 }
 
