@@ -1009,6 +1009,23 @@ section.cases .btn-all-cases a:hover {
 	text-decoration: none;
 }
 
+/* Modal Cases */
+.reveal-modal.open {
+}
+
+.reveal-modal.open .logo {
+	float: left;
+}
+
+.reveal-modal.open .description {
+}
+
+.reveal-modal.open .description h1 {
+	color: #008175;
+	font-size: 3em;
+    font-weight: 300;
+}
+
 /* Missão */
 
 section.missao {
