@@ -10,17 +10,20 @@
 <?php /* Start the Loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-		<?php if ( has_post_thumbnail() ) { ?>
-		<?php $the_thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_id() ), 'full' ); ?>
-			<div class="col-md-3 logo">
-				<img src="<?php echo $the_thumb[0]; ?>" width="<?php echo $the_thumb[1]; ?>" height="<?php echo $the_thumb[2]; ?>">
-			</div><!-- logo -->
-		<?php } ?>
+		<div class="col-md-3 logo">
+			<img src="<?php the_field('portfolio_logo'); ?>" alt="<?php the_title(); ?>">
+		</div><!-- logo -->
 
 		<div class="col-md-9 description">
 			<h1><?php the_title(); ?></h1>
+			<?php the_field('portfolio_descricao_curta'); ?>
+		</div><!-- description -->
+
+		<div class="hr"></div>
+
+		<div class="col-md-12 content">
 			<?php the_content();?>
-		</div>
+		</div><!-- content -->
 		
 <?php endwhile; ?>
 <?php endif; ?>

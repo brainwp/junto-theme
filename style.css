@@ -553,19 +553,34 @@ a:active {
 7.0 Alignments
 --------------------------------------------------------------*/
 .alignleft {
+	background-color: #ddd;
+    border: 1px solid #ccc;
 	display: inline;
 	float: left;
-	margin-right: 1.5em;
+	margin: 10px 1.5em 10px 0;
+	padding: 5px;
 }
 .alignright {
+	background-color: #ddd;
+    border: 1px solid #ccc;
 	display: inline;
 	float: right;
-	margin-left: 1.5em;
+	margin: 10px 0 10px 1.5em;
+	padding: 5px;
 }
 .aligncenter {
+	background-color: #ddd;
+    border: 1px solid #ccc;
 	clear: both;
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto;
+	padding: 5px;
+}
+.alignnone {
+	background-color: #ddd;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -1015,15 +1030,29 @@ section.cases .btn-all-cases a:hover {
 
 .reveal-modal.open .logo {
 	float: left;
+	margin-top: 20px;
 }
 
 .reveal-modal.open .description {
+	padding-left: 20px;
 }
 
 .reveal-modal.open .description h1 {
 	color: #008175;
 	font-size: 3em;
     font-weight: 300;
+}
+
+.reveal-modal.open .content {
+	margin: 30px auto 10px;
+}
+
+.reveal-modal.open .hr {
+	border-bottom: 2px dashed #d9d9d9;
+    clear: both;
+    margin: 0 auto;
+    padding: 39px 0 0;
+    width: 74%;
 }
 
 /* Missão */
