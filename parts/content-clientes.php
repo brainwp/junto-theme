@@ -9,7 +9,7 @@
 <div id="clientes" class="top-bg sclientes"></div>
 <section class="col-md-12 clientes" id="clientes_section">
 	<header class="entry-header">
-		<h2>Alguns clientes que já Juntamos</h2>
+		<h2>Clientes que já Juntamos</h2>
 		<span class="sub-title">[ Clientes ]</span>
 	</header><!-- .entry-header -->
 

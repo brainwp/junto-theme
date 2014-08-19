@@ -34,7 +34,7 @@
 					if( $desc ) {
 						echo "<span class='desc'>";
 							echo "<span class='title'>" . $title . "</span>";
-							echo $desc;
+							echo "<div class='content'>" . $desc . "</div>";
 						echo "</span>";
 					}
 

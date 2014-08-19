@@ -30,7 +30,7 @@
 		<div class="metodos">
 
 			<div class="each">
-				<span class="number">1</span>
+				<span class="number um">1</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_primeira_metodologia', $m->ID ) ?>
 				</span>
@@ -42,7 +42,7 @@
 			<div class="linha-vertical"></div>
 
 			<div class="each">
-				<span class="number">2</span>
+				<span class="number dois">2</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_segunda_metodologia', $m->ID ) ?>
 				</span>
@@ -54,7 +54,7 @@
 			<div class="linha-vertical"></div>
 
 			<div class="each">
-				<span class="number">3</span>
+				<span class="number tres">3</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_terceira_metodologia', $m->ID ) ?>
 				</span>
@@ -66,7 +66,7 @@
 			<div class="linha-vertical"></div>
 
 			<div class="each">
-				<span class="number">4</span>
+				<span class="number quatro">4</span>
 				<span class="title">
 					<?php echo get_field( 'titulo_quarta_metodologia', $m->ID ) ?>
 				</span>

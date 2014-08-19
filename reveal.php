@@ -16,7 +16,7 @@
 
 		<div class="col-md-9 description">
 			<h1><?php the_title(); ?></h1>
-			<?php the_field('portfolio_descricao_curta'); ?>
+			<span><?php the_field('portfolio_descricao_curta'); ?></span>
 		</div><!-- description -->
 
 		<div class="hr"></div>
