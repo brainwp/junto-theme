@@ -125,6 +125,7 @@ a:active {
 a img {
 	border: 0;
 }
+
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
@@ -1355,6 +1356,68 @@ section.servicos .entry-content .each .desc .title {
 }
 
 
+/* Widget Alo Easymail */
+
+.site-footer .alo_easymail_widget .widget-title {
+	text-align: center;
+}
+
+.site-footer .alo_easymail_widget_form {
+	margin-top: 20px;
+}
+
+.site-footer .alo_easymail_widget_form tr {
+	height: 50px;
+	padding: 5px;
+	width: 100%;
+}
+
+.site-footer .alo_easymail_widget_form table {
+	margin-bottom: 10px;
+}
+
+.site-footer .alo_easymail_widget_form .input-submit {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	color: #FFF;
+	float: right;
+	text-align: right;
+	font-style: italic;
+	padding: 0;
+	text-shadow: none;
+}
+
+.site-footer .alo_easymail_widget_form .input-text {
+	width: 100%;
+}
+
+/* Widget Simple Social Icons */
+
+.site-footer .social-icons {
+	width: auto;
+	float: right;
+	margin-top: -60px;
+	margin-right: 77px;
+}
+
+.site-footer .simple-social-icons .widget-title {
+	color: #FFF;
+	font-size: 1.5em;
+	margin-left: 2px;
+	font-style: normal;
+	text-transform: capitalize;
+	margin-right: 10px;
+    text-align: right;
+}
+
+.site-footer .simple-social-icons .alignright, .site-footer .simple-social-icons .alignleft {
+	background: transparent;
+	border: none;
+}
+
+
+
 /*--------------------------------------------------------------
 13.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1443,4 +1506,79 @@ object {
 .gallery-caption {}
 .container{
     transition:400ms ease all;
+}
+
+
+
+
+/* Responsive */
+
+@media all and (max-width: 800px) {
+	.site-footer .social-icons {
+		margin-top: 0px;
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.site-footer .mini-logo {
+		margin: 20px auto 20px auto;
+	}
+	.site-footer .entry-content .contato {
+		text-align: center;
+		border-bottom: 1px dashed #6cab99;
+		margin-bottom: 0px;
+		padding: 0 20px 40px 20px;
+	}
+	.site-footer .contatos .line {
+		width: 50%;
+		float: left;
+		margin: 25px auto;
+	}
+	.site-footer .btn-contato {
+		max-width: 85%;
+		margin: 0 auto;
+	}
+	.site-footer .entry-content .blog {
+		text-align: center;
+		border-bottom: 1px dashed #6cab99;
+		margin-bottom: 0px;
+		padding: 0 20px 40px 20px;
+	}
+	.site-footer .entry-content .news {
+		border-bottom: 1px dashed #6cab99;
+		margin-bottom: 15px;
+		padding: 20px 20px 10px 20px;
+	}
+	.site-footer .alo_easymail_widget_form .input-submit {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+	.site-footer .social-icons {
+		width: 100%;
+		float: none;
+		margin-top: 0px;
+		margin-right: auto;
+	}
+	.site-footer .simple-social-icons .widget-title {
+		text-align: center;
+	}
+	.site-footer .simple-social-icons .alignright, .site-footer .simple-social-icons .alignleft, .site-footer .simple-social-icons .aligncenter {
+		text-align: center;
+		clear: both;
+    	display: block;
+    	float: none;
+	}
+	.site-footer .simple-social-icons ul li {
+		display: inline-block;
+    	float: none;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.site-footer .btn-contato {
+		max-width: 100%;
+	}
 }
