@@ -781,6 +781,21 @@ h1.widget-title {
 .bypostauthor {
 }
 
+.comments-area {
+	margin-top: 40px;
+	color: #555;
+}
+
+.comments-area .comments-title, .comments-area .comment-reply-title {
+	color: #00675e;
+	font-weight: 300;
+	margin: 5px 0 20px;
+}
+
+.comment-respond {
+	margin: 30px 0 0 0;
+}
+
 /*--------------------------------------------------------------
 11.0 - One Page Home
 --------------------------------------------------------------*/
