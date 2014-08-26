@@ -631,10 +631,14 @@ a:active {
 
 h1.widget-title {
 	display: block;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	font-style: italic;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+#secondary h1.widget-title {
+	font-size: 1.5em;
 }
 
 
@@ -698,6 +702,13 @@ h1.widget-title {
 	font-size: 4.7em;
 	font-weight: 300;
 	color: #00675e;
+}
+
+.site-content .post {
+	background: #FFF;
+	border-radius: 8px;
+	margin: 20px;
+	width: 96%;
 }
 
 .sticky {
