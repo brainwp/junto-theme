@@ -365,15 +365,15 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #008175;
 }
 a:visited {
-	color: purple;
+	color: #008175;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #00a797;
 }
 
 /*--------------------------------------------------------------
@@ -641,17 +641,21 @@ h1.widget-title {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+
+.site-content {
+	background: url("img/bg-claro.jpg") repeat fixed 0 0 transparent;
+	position: relative;
+	z-index: 0;
+}
 .edit-link {
 	background: #BBB;
 	border-radius: 3px;
 	padding: 3px 5px;
 }
-
 .edit-link a {
 	color: #212121;
 	text-decoration: none;
 }
-
 .edit-link a:hover {
 	color: #000;
 }
@@ -669,6 +673,15 @@ h1.widget-title {
 #page {
 	margin-top: 40px;
 }
+.site-content .page.col-md-12 {
+	padding: 20px 30px;	
+}
+.site-content .page.col-md-12 .entry-title {
+	font-size: 4.7em;
+	font-weight: 300;
+	color: #00675e;
+}
+
 .sticky {
 }
 .hentry {
@@ -730,19 +743,32 @@ section .entry-header .sub-title {
 	text-transform: uppercase;
 }
 
-/**/
+/* Headerv*/
 
 .header {
 	width: 100%;
-	height: 600px;
+	height: 200px;
 	background: url('img/bg-preto.png') center transparent;
 }
 
 .header .logo {
+	width: 220px;
+	height: auto;
+	margin: 50px 30px;
+	position: fixed;
+}
+
+.header.home {
+	height: 600px;
+}
+
+.header.home .logo {
 	width: 320px;
 	height: 120px;
 	margin: 250px auto 0;
+	position: relative;
 }
+
 
 /* Metodologia */
 section.metodologia {
