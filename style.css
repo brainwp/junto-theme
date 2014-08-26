@@ -681,7 +681,6 @@ h1.widget-title {
 	font-weight: 300;
 	color: #00675e;
 }
-
 .sticky {
 }
 .hentry {
@@ -703,6 +702,38 @@ h1.widget-title {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+
+/* Single Cases */
+.site-content .portfolio.col-md-12 {
+	padding: 20px 30px;	
+}
+.site-content .portfolio.col-md-12 .logo {
+	margin-top: 30px;
+}
+.site-content .portfolio.col-md-12 .description {
+	padding-left: 30px;
+}
+.site-content .portfolio.col-md-12 .description span {
+	font-size: 1.4em;
+	font-weight: 300;
+	font-style: italic;
+}
+.site-content .portfolio.col-md-12 .description h1 {
+	color: #008175;
+	font-size: 3em;
+    font-weight: 300;
+}
+.site-content .portfolio.col-md-12 .content {
+	margin: 30px auto 10px;
+}
+.site-content .portfolio.col-md-12 hr {
+	border-bottom: 2px dashed #d9d9d9;
+    clear: both;
+    margin: 0 auto;
+    padding: 39px 0 0;
+    width: 74%;
 }
 
 /*--------------------------------------------------------------
