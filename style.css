@@ -365,15 +365,15 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #008175;
+	color: #008175 !important;
 }
 a:visited {
-	color: #008175;
+	color: #008175 !important;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #00a797;
+	color: #00a797 !important;
 }
 
 /*--------------------------------------------------------------
@@ -631,7 +631,7 @@ a:active {
 
 h1.widget-title {
 	display: block;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-style: italic;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -659,6 +659,15 @@ h1.widget-title {
 .edit-link a:hover {
 	color: #000;
 }
+#primary {
+	float: left;
+	width: 70%;
+}
+#secondary {
+	float: right;
+	width: 30%;
+	padding: 35px;
+}
 
 /*--------------------------------------------------------------
 10.1 Posts and pages
@@ -681,6 +690,16 @@ h1.widget-title {
 	font-weight: 300;
 	color: #00675e;
 }
+
+.site-content .post.col-md-12 {
+	padding: 20px 30px;	
+}
+.site-content .post.col-md-12 .entry-title {
+	font-size: 4.7em;
+	font-weight: 300;
+	color: #00675e;
+}
+
 .sticky {
 }
 .hentry {
