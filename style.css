@@ -901,6 +901,10 @@ section.metodologia .entry-content .each:first-child {
 	/*margin-left: 0*/
 }
 
+section.metodologia .clear.metodologia {
+	display: none;
+}
+
 section.metodologia .entry-content .each .number {
     color: #FFF;
     display: inline-block;
@@ -1640,7 +1644,29 @@ object {
 
 /* Responsive */
 
-@media all and (max-width: 800px) {
+@media (max-width: 1024px) {
+	section.metodologia .entry-content .each {
+		width: 21.5%;
+		padding: 0 15px;
+	}
+
+	section.metodologia .linha-vertical {
+		background: url("img/seta-metodologia.png") no-repeat scroll -13px center;
+		width: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	section.metodologia .entry-content .each {
+		width: 45.5%;
+		padding: 0 20px;
+	}
+	section.metodologia .linha-vertical.dois {
+		display: none;
+	}
+	section.metodologia .clear.metodologia {
+		display: block;
+	}
 	.site-footer .social-icons {
 		margin-top: 0px;
 		margin-right: 0;

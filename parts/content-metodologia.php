@@ -23,12 +23,11 @@
 				$m_each['1'] = get_field( 'segunda_metodologia', $m->ID );
 				$m_each['2'] = get_field( 'terceira_metodologia', $m->ID );
 				$m_each['3'] = get_field( 'quarta_metodologia', $m->ID );
-
 			endif;
 	    ?>
 
 		<div class="metodos">
-
+		
 			<div class="each">
 				<span class="number um">1</span>
 				<span class="title">
@@ -39,7 +38,7 @@
 				</span>
 			</div><!-- .each -->
 
-			<div class="linha-vertical"></div>
+			<div class="linha-vertical um"></div>
 
 			<div class="each">
 				<span class="number dois">2</span>
@@ -50,8 +49,10 @@
 					<?php echo $m_each['1']; ?>
 				</span>
 			</div><!-- .each -->
+			
+			<div class="clear metodologia"></div>
 
-			<div class="linha-vertical"></div>
+			<div class="linha-vertical dois"></div>
 
 			<div class="each">
 				<span class="number tres">3</span>
@@ -63,7 +64,7 @@
 				</span>
 			</div><!-- .each -->
 
-			<div class="linha-vertical"></div>
+			<div class="linha-vertical tres"></div>
 
 			<div class="each">
 				<span class="number quatro">4</span>
