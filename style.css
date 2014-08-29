@@ -364,16 +364,16 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
-	color: #008175 !important;
+body a {
+	color: #008175;
 }
-a:visited {
-	color: #008175 !important;
+body a:visited {
+	color: #008175;
 }
-a:hover,
-a:focus,
-a:active {
-	color: #00a797 !important;
+body a:hover,
+body a:focus,
+body a:active {
+	color: #00a797;
 }
 
 /*--------------------------------------------------------------
@@ -805,6 +805,20 @@ h1.widget-title {
 
 .comment-respond {
 	margin: 30px 0 0 0;
+}
+
+#respond #submit {
+	background: #008175;
+	box-shadow: none;
+	border: none;
+	color: #FFF;
+	margin-top: 10px;
+	padding-bottom: 13px;
+	text-shadow: none;
+}
+
+#respond #submit:hover {
+	background: #00675E;
 }
 
 /*--------------------------------------------------------------
@@ -1480,6 +1494,14 @@ section.servicos .entry-content .each .desc .title {
 	margin: 10px 0;
 	width: 100%;
 	display: block;
+}
+
+.site-footer .blog a {
+	color: #FFF;
+}
+
+.site-footer .blog a:hover {
+	color: #84d2bc;
 }
 
 .site-footer .entry-content .blog .mais {
