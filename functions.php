@@ -102,6 +102,33 @@ if (!function_exists('junto_theme_setup')) :
                 wp_insert_post($defaults);
             }
 
+            $page = get_page_by_path('home', OBJECT, 'page');
+            if (empty($page)) {
+                $defaults = array(
+                    'post_status' => 'publish',
+                    'post_name' => 'home', // The name (slug) for your post
+                    'post_title' => 'Home', // The title of your post.
+                    'post_type' => 'page',
+                    'post_parent' => 0,
+                    'page_template' => 'Home',
+                );
+                // Insert the post into the database
+                wp_insert_post($defaults);
+            }
+
+            $blog = get_page_by_path('blog', OBJECT, 'page');
+            if (empty($blog)) {
+                $defaults = array(
+                    'post_status' => 'publish',
+                    'post_name' => 'blog', // The name (slug) for your post
+                    'post_title' => 'Blog', // The title of your post.
+                    'post_type' => 'page',
+                    'post_parent' => 0,
+                );
+                // Insert the post into the database
+                wp_insert_post($defaults);
+            }
+
             $page = get_page_by_path('cases', OBJECT, 'onepage');
             add_option( 'cases', $page->ID, '', 'yes' );
 
