@@ -6,7 +6,7 @@
  */
 ?>
 
-<?php if ( is_home() ) : ?>
+<?php if ( is_front_page() ) : ?>
 		
 	<span class="top_menu top active" data-element="#junto"></span>
 
