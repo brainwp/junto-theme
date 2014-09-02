@@ -33,13 +33,13 @@
 						</span>
 					</div>
 					<div class="col-sm-4 blog">
-						<h2>Blog</h2>
+						<a href="<?php echo home_url('blog'); ?>"><h2>Blog</h2></a>
 						<?php
-							$last_posts = wp_get_recent_posts( array( 'numberposts' => '1' ) );
+							$last_posts = wp_get_recent_posts( array( 'numberposts' => '1', 'post_status' => 'publish', ) );
 							foreach( $last_posts as $last ){
 								echo '<a class="title" href="' . get_permalink($last["ID"]) . '" title="Veja '.esc_attr($last["post_title"]).'" >' .   $last["post_title"].'</a>';
-								echo resumo( $last["post_content"], 500 );
-								echo '<br><a class="mais" href="' . get_permalink($last["ID"]) . '" title="Look '.esc_attr($last["post_title"]).'" >Leia mais >></a>';
+								echo resumo( $last["post_content"], 400 );
+								echo '<br><a class="mais" href="' . get_permalink($last["ID"]) . '" title="Veja '.esc_attr($last["post_title"]).'" >Leia mais >></a>';
 							}
 						?>
 					</div>
