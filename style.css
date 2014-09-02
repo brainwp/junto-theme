@@ -859,6 +859,7 @@ section .entry-header .sub-title {
 
 .header.home {
 	height: 600px;
+	overflow: hidden;
 }
 
 .header.home .logo {
