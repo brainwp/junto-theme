@@ -20,17 +20,23 @@
 						</span>
 						<span class="contatos">
 							<div class="line">
-								<span class="phone"></span><span>11 2222 2222</span><br>
+								<span class="phone"></span><span><?php echo get_field('telefone_um', 'options'); ?></span><br>
+								<?php if (get_field('telefone_dois', 'options')) : ?>
+									<span class="second"><?php echo get_field('telefone_dois', 'options'); ?></span><br>
+								<?php endif; ?>
 							</div><!-- line -->
 							<div class="line">
-								<span class="email"></span><span>11 2222 2222</span>
+								<?php if (get_field('email_publico', 'options')) : ?>
+									<span class="email"></span><span><?php echo get_field('email_publico', 'options'); ?></span>
+								<?php endif; ?>
 							</div><!-- line -->
 						</span>
-						<span class="btn-contato">
+
+						<a href="<?php echo home_url('/contato-qdtu'); ?>" class="btn-contato">
 							<div class="barra-esquerda"></div>
 							<div class="barra-direita"></div>
 								<span>Entre em Contato</span>
-						</span>
+						</a>
 					</div>
 					<div class="col-sm-4 blog">
 						<a href="<?php echo home_url('blog'); ?>"><h2>Blog</h2></a>

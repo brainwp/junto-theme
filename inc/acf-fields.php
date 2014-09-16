@@ -729,3 +729,80 @@ function _register_field_groups()
         ));
     }
 }
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_opcoes',
+        'title' => 'Opções',
+        'fields' => array (
+            array (
+                'key' => 'field_54189fcb976a8',
+                'label' => 'Endereço',
+                'name' => 'endereco',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_54189fdc976a9',
+                'label' => 'Telefone',
+                'name' => 'telefone_um',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
+            array (
+                'key' => 'field_5418a00a976aa',
+                'label' => 'Telefone Secundário',
+                'name' => 'telefone_dois',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
+            array (
+                'key' => 'field_5418a019976ab',
+                'label' => 'E-mail Público',
+                'name' => 'email_publico',
+                'type' => 'email',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'acf-options',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
+
