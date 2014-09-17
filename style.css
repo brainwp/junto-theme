@@ -1455,6 +1455,10 @@ section.servicos .entry-content .each .desc .title {
 	width: 20px;
 }
 
+.site-footer .contatos .second {
+	margin-left: 25px;
+}
+
 .site-footer .contatos .email {
 	background: url('img/icons.png') 0 -16px no-repeat;
 	height: 20px;
@@ -1532,14 +1536,19 @@ section.servicos .entry-content .each .desc .title {
 
 .site-footer .alo_easymail_widget_form .input-submit {
 	background: transparent;
-	border: none;
+	border: 1px solid #84d2bc;
 	box-shadow: none;
 	color: #FFF;
 	float: right;
 	text-align: right;
 	font-style: italic;
-	padding: 0;
+	padding: 7px 12px;
 	text-shadow: none;
+}
+
+.site-footer .alo_easymail_widget_form .input-submit:hover {
+	background-color: #84d2bc;
+	color: #00675e;
 }
 
 .site-footer .alo_easymail_widget_form .input-text {
