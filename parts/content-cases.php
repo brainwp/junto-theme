@@ -126,7 +126,7 @@
 				<div class="btn-all-cases">
 					<div class="barra-esquerda"></div>
 					<div class="barra-direita"></div>
-					<a href="<?php echo home_url(); ?>/cases">Outros Cases</a>
+					<a href="<?php echo home_url(); ?>/portfolio">Outros Cases</a>
 				</div>
 			</div>
 

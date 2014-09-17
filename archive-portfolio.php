@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" <?php post_class('col-md-12 content-area'); ?>>
+	<section <?php post_class('col-md-12 content-area'); ?>>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
