@@ -61,7 +61,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
-	font-size: 100%;
+	/*font-size: 100%;*/
 	font-style: inherit;
 	font-weight: inherit;
 	margin: 0;
@@ -70,7 +70,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
 	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
@@ -83,6 +82,7 @@ html {
 	box-sizing:         border-box;
 }
 body {
+	font-size: 62.5%;
 	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 article,
@@ -892,7 +892,7 @@ section.metodologia .entry-header .sub-title {
 section.metodologia .entry-content {
 	margin-top: 0;
 	max-width: 1200px;
-	margin: auto;
+	margin: 0 20px;
 }
 
 section.metodologia .entry-content .each {
@@ -909,7 +909,7 @@ section.metodologia .linha-vertical {
     height: 400px;
     margin: 100px 0 0;
     overflow: hidden;
-    width: 35px;
+    width: 3.3%;
 }
 
 section.metodologia .entry-content .each:first-child {
@@ -1542,14 +1542,19 @@ section.servicos .entry-content .each .desc .title {
 
 .site-footer .alo_easymail_widget_form .input-submit {
 	background: transparent;
-	border: none;
+	border: 1px solid #84d2bc;
 	box-shadow: none;
 	color: #FFF;
 	float: right;
 	text-align: right;
 	font-style: italic;
-	padding: 0;
+	padding: 7px 12px;
 	text-shadow: none;
+}
+
+.site-footer .alo_easymail_widget_form .input-submit:hover {
+	background-color: #84d2bc;
+	color: #00675e;
 }
 
 .site-footer .alo_easymail_widget_form .input-text {
