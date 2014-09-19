@@ -1037,10 +1037,13 @@ section.clientes .entry-content {
 section.clientes .logos {
 	overflow: hidden;
 	margin: 20px auto;
+    z-index:999 !important;
+    float:left;
 }
 
 section.clientes .logos .each-logo {
-	text-align: center;
+    z-index:999 !important;
+    text-align: center;
 }
 
 section.clientes .logos .each-logo img {
@@ -1772,4 +1775,8 @@ object {
 	.site-footer .btn-contato {
 		max-width: 100%;
 	}
+}
+
+#clientes_section .caroufredsel_wrapper{
+    z-index:999 !important;
 }

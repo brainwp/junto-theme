@@ -104,4 +104,38 @@
 
     });
     //function to generate the onepage menu
+
+
+    //slider clientes
+    var _scroll = {
+        delay: 1000,
+        easing: 'linear',
+        items: 1,
+        duration: 0.07,
+        timeoutDuration: 0,
+        pauseOnHover: false
+    };
+    $('#carousel-clientes').carouFredSel({
+        responsive: true,
+        align:'left',
+        width: '100%',
+        height: 330,
+        scroll: {
+            delay: 1000,
+            easing: 'linear',
+            items: 1,
+            duration: 0.07,
+            timeoutDuration: 0,
+            pauseOnHover: 'immediate'
+        },
+        items: {
+            width: 350,
+            visible: {
+                min: 1,
+                max: 4
+            }
+        }
+    });
+   // $('#carousel-clientes').css('width', '960px !important');
+    //$('#carousel-clientes .caroufredsel_wrapper').css('z-index', '999 !important');
 })(jQuery);
